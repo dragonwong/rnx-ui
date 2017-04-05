@@ -39,7 +39,9 @@ class ImgHolder extends Component {
     this.onLoad = this.onLoad.bind(this);
   }
   onLoad() {
-    this.removeBaseImgfn();
+    if (this.props.removeBaseImg) {
+      this.removeBaseImgfn();
+    }
   }
   removeBaseImgfn() {
     const holder = null;
@@ -72,6 +74,9 @@ ImgHolder.propTypes = {
   holder: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
   // 图片资源
   source: PropTypes.oneOfType([PropTypes.object, PropTypes.number]).isRequired,
+  // 图片加载完成是否移除底图
+  removeBaseImg: PropTypes.bool,
+
 };
 ImgHolder.defaultProps = {
   style: null,
@@ -80,6 +85,7 @@ ImgHolder.defaultProps = {
   source: {
     uri: '',
   },
+  removeBaseImg: false,
 };
 
 export default ImgHolder;
