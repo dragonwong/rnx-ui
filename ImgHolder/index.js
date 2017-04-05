@@ -27,15 +27,34 @@ const styles = StyleSheet.create({
     width: null,
   },
 });
-
 class ImgHolder extends Component {
+  constructor(props) {
+    super(props);
+
+    const { holder } = props;
+    this.state = {
+      holder,
+    };
+    this.removeBaseImgfn = this.removeBaseImgfn.bind(this);
+    this.onLoad = this.onLoad.bind(this);
+  }
+  onLoad() {
+    this.removeBaseImgfn();
+  }
+  removeBaseImgfn() {
+    const holder = null;
+    this.setState({
+      holder,
+    });
+  }
   render() {
     return (
       <View style={[styles.all, this.props.style]}>
         {
-          this.props.holder
+          this.state.holder
         }
         <Image
+          onLoad={this.onLoad}
           source={this.props.source}
           style={[styles.img, this.props.imgStyle]}
         />
