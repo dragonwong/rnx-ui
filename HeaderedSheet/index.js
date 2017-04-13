@@ -203,7 +203,7 @@ HeaderedSheet.propTypes = {
    */
   leftBtn: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
    /**
-   * @property leftBtn
+   * @property onPressLeftBtn
    * @type Function
    * @default NOOP
    * @description  左侧点击事件
@@ -246,7 +246,7 @@ HeaderedSheet.propTypes = {
   activeOpacity: PropTypes.number,
   /**
    * @property children
-   * @type Object
+   * @type Element
    * @default null
    * @description  子元素
    */

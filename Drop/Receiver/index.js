@@ -3,8 +3,8 @@
  * @version 0.17.0
  * @description 掉落元素接受组件
  * 用来包裹掉落元素接受元素，如果该元素是绝对定位，定位的样式应该写在 `Receiver` 或父元素上，而不应该写在子元素上。`Receiver` 主要提供以下功能：
- * 1. 提供元素中心坐标，以作为掉落动画的终点；
- * 2. 提供掉落组件到达时的响应动画，需要在 `Dropper` 元素的 `onEnd` 回调中手动调用 `Receiver` 元素的 `animate` 方法。
+ *  1. 提供元素中心坐标，以作为掉落动画的终点；
+ *  2. 提供掉落组件到达时的响应动画，需要在 `Dropper` 元素的 `onEnd` 回调中手动调用 `Receiver` 元素的 `animate` 方法。
  * @example
  * import {Receiver,} from 'rnx-ui/Drop';
  * import Badge from 'rnx-ui/Drop';
@@ -144,7 +144,7 @@ Receiver.propTypes = {
   /**
    * @property style
    * @type Object
-   * @default 1.1
+   * @default null
    * @description 自定义样式
    */
   style: View.propTypes.style,
@@ -156,7 +156,7 @@ Receiver.propTypes = {
    */
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
   /**
-   * @property style
+   * @property onLayout
    * @type Function
    * @default NOOP
    * @description 布局回调
@@ -174,3 +174,6 @@ Receiver.defaultProps = {
 };
 
 export default Receiver;
+/**
+ * @exports Receiver
+ */

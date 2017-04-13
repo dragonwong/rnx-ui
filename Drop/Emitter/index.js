@@ -98,3 +98,6 @@ Emitter.defaultProps = {
 };
 
 export default Emitter;
+/**
+ * @exports Emitter
+ */

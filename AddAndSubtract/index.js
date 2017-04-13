@@ -1,7 +1,8 @@
 /**
  * @component AddAndSubtract
- * @version 0.17.0
+ * @version 0.11.1
  * @description 加减法动画组件
+ *
  * ![AddAndSubtract](http://wx3.sinaimg.cn/mw690/4c8b519dly1fcaq7v2pnvg20ho0wgh0z.gif)
  * @example
  * import Template from 'rnx-ui/Template';
@@ -205,7 +206,7 @@ AddAndSubtract.propTypes = {
      */
   deg: PropTypes.number,
     /**
-     * @property deg
+     * @property easing
      * @type Function
      * @default t => t
      * @description 动画函数
@@ -269,12 +270,14 @@ AddAndSubtract.propTypes = {
   textStyle: Text.propTypes.style,
     /**
      * @property adder
+     * @type Element
      * @default null
      * @description 加法按钮
      */
   adder: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
     /**
      * @property subtracter
+     * @type Element
      * @default <Text style={styles.adderText}>+</Text>
      * @description 减法按钮
      */

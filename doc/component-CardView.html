@@ -401,8 +401,8 @@
 </h2>
 <div class="api-content"><p>卡片视图
 以卡片样式浏览，并可以设置激活卡片样式。
-通过 <code>getEl</code> 属性获取 CardView 实例，调用 <code>scrollToCard</code> 方法可以
-⚠️ 注意
+通过 <code>getEl</code> 属性获取 CardView 实例，调用 <code>scrollToCard</code> 方法可以</p>
+<p>⚠️ 注意
 CardView 会为卡片添加 <code>isActiveRnxUiCardView</code> 属性，激活卡片值为 <code>true</code>，其他卡片是 <code>false</code>。
 <img src="http://wx3.sinaimg.cn/mw690/4c8b519dly1fdgvohgt53g20hs0wsaip.gif" alt="CardView"></p>
 </div>
@@ -730,6 +730,56 @@ CardView 会为卡片添加 <code>isActiveRnxUiCardView</code> 属性，激活�
 
 
 
+<div class="con-head">方法</div>
+
+<blockquote class="api">
+    <h3 id="scrollToCard(index)" class="subject">
+    <strong>scrollToCard(index)</strong>
+    
+    <a class="hashlink" href="#scrollToCard(index)">#</a>
+    </h3>
+</blockquote>
+<div class="api-content"></div>
+
+<p class="api-content">
+    <small class="text-muted">方法参数:</small>
+</p>
+<div class="docs-table api-content">
+    <table class="yo-table yo-table-border">
+        <colgroup>
+            <col class="c1">
+            <col class="c2">
+            <col class="c3">
+            <col class="c4">
+        </colgroup>
+        <thead>
+            <tr class="active">
+                <th>参数名</th>
+                <th>类型</th>
+                <th>描述</th>
+                <th>必选</th>
+                <th>版本</th>
+            </tr>
+        </thead>
+        
+        <tr>
+            <td>index</td>
+            <td>Number</td>
+            <td>卡片序号 跳转至指定卡片</td>
+            <td>
+                
+                <i class="yo-ico glyphicon glyphicon-ok text-success"></i> 
+            </td>
+            <td></td>
+        </tr>
+        
+    </table>
+</div>
+
+
+
+
+
 
 <div class="con-head">示例</div>
 <pre class="ydoc-example" ><code>import CardView from 'rnx-ui/CardView';
@@ -742,7 +792,8 @@ return (
      onChange={this.onChange}
    /&gt;
  );
- }</code></pre>
+ }
+![CardView](http://wx3.sinaimg.cn/mw690/4c8b519dly1fdgvohgt53g20hs0wsaip.gif)</code></pre>
 
 
 </div>

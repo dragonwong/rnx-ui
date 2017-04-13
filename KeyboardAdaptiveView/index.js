@@ -9,6 +9,7 @@
  * `KeyboardAvoidingView`（既然来找 `KeyboardAdaptiveView` 相信你一定是被官方的那个组件坑了😄）
  *  在 iOS 设备中，处于滚动视图（`ScrollView` 或 `ListView`）中的输入控件（`TextInput`）如果处于页面偏下位置，常常容易被弹起的键盘遮住。
  *  于是，可以使用 `KeyboardAdaptiveView` 解决这个问题。
+ *
  *  ⚠️注意
  *  1. `KeyboardAdaptiveView` 会针对不同位置的 `TextInput` 进行不同位移，
  *  所以必须在每一个 `TextInput` 的 `onFocus` 时触发 `KeyboardAdaptiveView` 的 `inputFocusHandle` 方法，
@@ -17,18 +18,18 @@
  *  在视图滚动时自动关闭键盘。对此 `KeyboardAdaptiveView` 也为你准备好适合的 `keyboardDismissMode` 值了，直接引用即可。
  *  3. `KeyboardAdaptiveView` 也提供了对安卓设备的支持，但是默认不会处理，当你确认要开启时，请确保禁用系统的处理。
  *  具体操作请参考 Example。
+ *
  * ![KeyboardAdaptiveView](http://wx2.sinaimg.cn/mw690/4c8b519dly1fbztgmfj0lg20ho0wgqv8.gif)
  * @example
  * import KeyboardAdaptiveView, {
  * keyboardDismissMode,
  * } from 'rnx-ui/Drop';
- *class Example extends Component {
+ * class Example extends Component {
  * constructor(props) {
  *   super(props);
  *   this.getKeyboardAdaptiveView = this.getKeyboardAdaptiveView.bind(this);
  *   this.onFocus = this.onFocus.bind(this);
  * }
-
  * onFocus(e) {
  *   if (this.keyboardAdaptiveView) {
  *     this.keyboardAdaptiveView.inputFocusHandle(e);
@@ -37,7 +38,6 @@
  * getKeyboardAdaptiveView(el) {
  *   this.keyboardAdaptiveView = el;
  * }
-
  * render() {
  *   return (
  *     <ScrollView

@@ -1,7 +1,7 @@
 
 /**
  * @component ImgHolder
- * @version 0.17.0
+ * @version 0.7.3
  * @description 带占位的图片组件
  *
  * ![ImgHolder](https://github.com/wangkexinW/htmldoc/blob/master/ImgHolder/demo.gif?raw=true)
@@ -72,7 +72,7 @@ ImgHolder.propTypes = {
    */
   holder: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
   /**
-   * @property soource
+   * @property source
    * @type Object
    * @default {
    *      uri: '',

@@ -1,6 +1,6 @@
 /**
  * @component ActionSheet
- * @version 0.17.0
+ * @version 0.11.7
  * @description 上拉按钮组
  * @example
  * import ActionSheet from 'rnx-ui/ActionSheet';
@@ -89,97 +89,107 @@ class ActionSheet extends Component {
 ActionSheet.propTypes = {
     /**
      * @property visible
-     * @description 显示开关
+     * @type Boolean
      * @default false
+     * @description 显示开关
      */
   visible: Sheet.propTypes.visible,
   // 按钮组
+   /**
+     * @property btnList
+     * @type Object
+     * @default [{
+     *   style: null,
+     *   text: '确定',
+     *  textStyle: null,
+     *   onPress: NOOP,
+     * }]
+     * @param {Object} style 按钮样式
+     * @param {String} text 按钮文字
+     * @param {Object} textStyle 按钮文字样式
+     * @param {Function} onPress 按钮点击回调
+     * @description 按钮组
+     */
   btnList: PropTypes.arrayOf(PropTypes.shape({
     /* eslint-disable */
-    /**
-     * @property style
-     * @description 按钮样式
-     * @default null
-     */
+    
     style: View.propTypes.style,
-    /**
-     * @property text
-     * @description 按钮文字
-     * @default '确定'
-     */
+   
     text: PropTypes.string,
-    /**
-     * @property textStyle
-     * @description 按钮文字样式
-     * @default null
-     */
+    
     textStyle: Text.propTypes.style,
-    /**
-     * @property onPress
-     * @description 按钮点击回调
-     * @default NOOP
-     */
+    
     onPress: PropTypes.func,
     /* eslint-enable */
   })),
     /**
      * @property btnStyle
-     * @description 统一按钮样式
+     * @type Object
      * @default null
+     * @description 统一按钮样式
      */
   btnStyle: View.propTypes.style,
     /**
      * @property btnTextStyle
-     * @description 统一按钮文字样式
+     * @type Object
      * @default null
+     * @description 统一按钮文字样式
      */
   btnTextStyle: Text.propTypes.style,
     /**
      * @property cancelBtnStyle
-     * @description 取消按钮样式
+     * @type Object
      * @default null
+     * @description 取消按钮样式
      */
   cancelBtnStyle: View.propTypes.style,
     /**
      * @property cancelBtnText
-     * @description 取消按钮文字
+     * @type String
      * @default '取消'
+     * @description 取消按钮文字
      */
   cancelBtnText: PropTypes.string,
     /**
      * @property cancelBtnTextStyle
-     * @description 取消按钮文字样式
+     * @type Object
      * @default null
+     * @description 取消按钮文字样式
      */
   cancelBtnTextStyle: Text.propTypes.style,
     /**
      * @property overlayStyle
-     * @description 遮罩层样式
+     * @type Object
      * @default null
+     * @description 遮罩层样式
      */
   overlayStyle: Sheet.propTypes.overlayStyle,
     /**
      * @property onClose
-     * @description 关闭回调（动画结束时）
+     * @type Function
      * @default NOOP
+     * @description 关闭回调（动画结束时）
      */
   onClose: Sheet.propTypes.onClose,
     /**
      * @property duration
-     * @description 动画时长
+     * @type Number
      * @default 200
+     * @description 动画时长
      */
   duration: Sheet.propTypes.duration,
     /**
      * @property style
-     * @description 自定义样式
+     * @type Object
      * @default null
+     * @description 自定义样式
      */
   style: View.propTypes.style,
     /**
      * @property underlayColor
-     * @description 按钮点击透明度变化
+     * @type String
      * @default '#eee'
+     * @description 按钮点击透明度变化
      */
   underlayColor: PropTypes.string,
 };

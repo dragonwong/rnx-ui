@@ -397,7 +397,7 @@
 <h2 id="ActionSheet">
     ActionSheet
     <small></small>
-    <span class="yo-badge yo-badge-danger">0.17.0</span>
+    <span class="yo-badge yo-badge-danger">0.11.7</span>
 </h2>
 <div class="api-content"><p>上拉按钮组</p>
 </div>
@@ -411,7 +411,7 @@
 <blockquote class="api">
     <h3 id="visible" class="subject">
     <strong>visible</strong>
-     <span class="prop-type">{  }</span>
+     <span class="prop-type">{ Boolean }</span>
     
     <a class="hashlink" href="#visible">#</a>
     </h3>
@@ -430,84 +430,26 @@
 
 
 <blockquote class="api">
-    <h3 id="style" class="subject">
-    <strong>style</strong>
-     <span class="prop-type">{  }</span>
+    <h3 id="btnList" class="subject">
+    <strong>btnList</strong>
+     <span class="prop-type">{ Object }</span>
     
-    <a class="hashlink" href="#style">#</a>
+    <a class="hashlink" href="#btnList">#</a>
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>按钮样式</p>
+    <div><p>按钮组</p>
 </div>
     
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="text" class="subject">
-    <strong>text</strong>
-     <span class="prop-type">{  }</span>
-    
-    <a class="hashlink" href="#text">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>按钮文字</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> '确定'
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="textStyle" class="subject">
-    <strong>textStyle</strong>
-     <span class="prop-type">{  }</span>
-    
-    <a class="hashlink" href="#textStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>按钮文字样式</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="onPress" class="subject">
-    <strong>onPress</strong>
-     <span class="prop-type">{  }</span>
-    
-    <a class="hashlink" href="#onPress">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>按钮点击回调</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> NOOP
+    <small class="text-muted">默认值:</small> [{
+style: null,
+text: '确定',
+textStyle: null,
+onPress: NOOP,
+}]
 </p>
 
 
@@ -516,7 +458,7 @@
 <blockquote class="api">
     <h3 id="btnStyle" class="subject">
     <strong>btnStyle</strong>
-     <span class="prop-type">{  }</span>
+     <span class="prop-type">{ Object }</span>
     
     <a class="hashlink" href="#btnStyle">#</a>
     </h3>
@@ -537,7 +479,7 @@
 <blockquote class="api">
     <h3 id="btnTextStyle" class="subject">
     <strong>btnTextStyle</strong>
-     <span class="prop-type">{  }</span>
+     <span class="prop-type">{ Object }</span>
     
     <a class="hashlink" href="#btnTextStyle">#</a>
     </h3>
@@ -558,7 +500,7 @@
 <blockquote class="api">
     <h3 id="cancelBtnStyle" class="subject">
     <strong>cancelBtnStyle</strong>
-     <span class="prop-type">{  }</span>
+     <span class="prop-type">{ Object }</span>
     
     <a class="hashlink" href="#cancelBtnStyle">#</a>
     </h3>
@@ -579,7 +521,7 @@
 <blockquote class="api">
     <h3 id="cancelBtnText" class="subject">
     <strong>cancelBtnText</strong>
-     <span class="prop-type">{  }</span>
+     <span class="prop-type">{ String }</span>
     
     <a class="hashlink" href="#cancelBtnText">#</a>
     </h3>
@@ -600,7 +542,7 @@
 <blockquote class="api">
     <h3 id="cancelBtnTextStyle" class="subject">
     <strong>cancelBtnTextStyle</strong>
-     <span class="prop-type">{  }</span>
+     <span class="prop-type">{ Object }</span>
     
     <a class="hashlink" href="#cancelBtnTextStyle">#</a>
     </h3>
@@ -621,7 +563,7 @@
 <blockquote class="api">
     <h3 id="overlayStyle" class="subject">
     <strong>overlayStyle</strong>
-     <span class="prop-type">{  }</span>
+     <span class="prop-type">{ Object }</span>
     
     <a class="hashlink" href="#overlayStyle">#</a>
     </h3>
@@ -642,7 +584,7 @@
 <blockquote class="api">
     <h3 id="onClose" class="subject">
     <strong>onClose</strong>
-     <span class="prop-type">{  }</span>
+     <span class="prop-type">{ Function }</span>
     
     <a class="hashlink" href="#onClose">#</a>
     </h3>
@@ -663,7 +605,7 @@
 <blockquote class="api">
     <h3 id="duration" class="subject">
     <strong>duration</strong>
-     <span class="prop-type">{  }</span>
+     <span class="prop-type">{ Number }</span>
     
     <a class="hashlink" href="#duration">#</a>
     </h3>
@@ -684,7 +626,7 @@
 <blockquote class="api">
     <h3 id="style" class="subject">
     <strong>style</strong>
-     <span class="prop-type">{  }</span>
+     <span class="prop-type">{ Object }</span>
     
     <a class="hashlink" href="#style">#</a>
     </h3>
@@ -705,7 +647,7 @@
 <blockquote class="api">
     <h3 id="underlayColor" class="subject">
     <strong>underlayColor</strong>
-     <span class="prop-type">{  }</span>
+     <span class="prop-type">{ String }</span>
     
     <a class="hashlink" href="#underlayColor">#</a>
     </h3>

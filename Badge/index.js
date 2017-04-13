@@ -1,6 +1,6 @@
 /**
  * @component Badge
- * @version 0.17.0
+ * @version 0.11.4
  * @description 角标组件 通常用来显示未读消息数目。
  *
  * ⚠️ 注意
@@ -111,7 +111,7 @@ Badge.propTypes = {
      */
   textStyle: Text.propTypes.style,
   /**
-     * @property textStyle
+     * @property characterWidth
      * @type Number
      * @default 7
      * @description 单个字符宽度
@@ -126,7 +126,7 @@ Badge.propTypes = {
   text: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /**
      * @property children
-     * @type Object
+     * @type Element
      * @default null
      * @description 主体元素
      */

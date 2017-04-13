@@ -103,7 +103,7 @@ ImgPicker.propTypes = {
    */
   itemStyle: View.propTypes.style,
   /**
-   * @property itemStyle
+   * @property adderBtnStyle
    * @type Object
    * @default null
    * @description 添加按钮自定义样式
@@ -124,7 +124,7 @@ ImgPicker.propTypes = {
    */
   adder: PropTypes.element,
   /**
-   * @property adder
+   * @property adderVisible
    * @type Boolean
    * @default true
    * @description 是否显示添加按钮
