@@ -1,3 +1,30 @@
+/**
+ * @component ImgPicker
+ * @version 0.17.0
+ * @description 图片选择组件
+ * ![](demo.gif)
+ * @example
+ * import ImgPicker from 'rnx-ui/ImgPicker';
+ *function Example(props) {
+ *  return (
+ *   <ImgPicker
+ *     images={this.state.images}
+ *     adder={
+ *       <Icon name="add" style={styles.imgPickerAdder} />
+ *     }
+ *     adderVisible={this.state.images.length < MAX_PHOTOS_NUMBER}
+ *     imgDisplayerProps={{
+ *       onImgPress: this.showPhoto,
+ *       deleter: (
+ *         <Icon name="close" style={styles.imgPickerDeleterIcon} />
+ *       ),
+ *       onDeleterPress: this.removePhoto,
+ *     }}
+ *     onAdderPress={this.openCameraActionSheet}
+ *   />
+ * );
+ * }
+ */
 import React, {
   Component,
   PropTypes,
@@ -47,23 +74,68 @@ class ImgPicker extends Component {
 }
 
 ImgPicker.propTypes = {
-  // 图片 uri 数组
+  /**
+   * @property images
+   * @type Array
+   * @default []
+   * @description 图片 uri
+   */
   images: PropTypes.arrayOf(PropTypes.string),
-  // ImgDisplayer 属性
+  /**
+   * @property ImgDisplayerProps
+   * @type Object
+   * @default ImgDisplayer.defaultProps
+   * @description ImgDisplayer 属性
+   */
   imgDisplayerProps: PropTypes.shape(ImgDisplayer.propTypes),
-  // 自定义样式
+  /**
+   * @property style
+   * @type Object
+   * @default null
+   * @description 自定义样式
+   */
   style: View.propTypes.style,
-  // 每项自定义样式
+  /**
+   * @property itemStyle
+   * @type Object
+   * @default null
+   * @description 每项自定义样式
+   */
   itemStyle: View.propTypes.style,
-  // 添加按钮自定义样式
+  /**
+   * @property itemStyle
+   * @type Object
+   * @default null
+   * @description 添加按钮自定义样式
+   */
   adderBtnStyle: View.propTypes.style,
-  // 添加按钮点击回调
+  /**
+   * @property onAdderPress
+   * @type Function
+   * @default NOOP
+   * @description 添加按钮点击回调
+   */
   onAdderPress: PropTypes.func,
-  // 添加按钮内容元素
+  /**
+   * @property adder
+   * @type Element
+   * @default <Text style={styles.adderText}>+</Text>
+   * @description 添加按钮内容元素
+   */
   adder: PropTypes.element,
-  // 是否显示添加按钮
+  /**
+   * @property adder
+   * @type Boolean
+   * @default true
+   * @description 是否显示添加按钮
+   */
   adderVisible: PropTypes.bool,
-  // 添加按钮点击颜色反馈
+   /**
+   * @property deleterUnderlayColor
+   * @type Function
+   * @default NOOP
+   * @description 添加按钮点击颜色反馈
+   */
   deleterUnderlayColor: PropTypes.string,
 };
 ImgPicker.defaultProps = {

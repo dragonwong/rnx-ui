@@ -6,7 +6,7 @@
 
 ## Demo
 
-![](demo.png)
+![PhoneNumInput demo](demo.png)
 
 ## Props
 

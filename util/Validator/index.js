@@ -1,5 +1,7 @@
 /**
- * 校验器
+ * @component Validator
+ * @version 0.17.0
+ * @description 提示框
  *
  * @method collect 用来收集基础表单组件的校验方法，通常为基础表单组件的 collectValidate 属性的值。
  * @method run 用来运行结果，返回一个对象。

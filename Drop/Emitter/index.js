@@ -1,3 +1,21 @@
+/**
+ * @component Emitter
+ * @description 掉落事件点击发射组件
+ * 用来包裹掉落事件点击发射元素，提供元素中心坐标，以作为掉落动画的起点。
+ * @example
+ * import {Emitter,} from 'rnx-ui/Drop';
+ * function CartEmitter(props) {
+ * return (
+ *   <Emitter
+ *     ref={this.getEl}
+ *     style={styles.all}
+ *     onPress={props.onPress}
+ *   >
+ *     <Cart />
+ *   </Emitter>
+ * );
+ *}
+  */
 import React, {
   Component,
   PropTypes,
@@ -51,11 +69,26 @@ class Emitter extends Component {
 }
 
 Emitter.propTypes = {
-  // 点击回调，参数为点击元素中心坐标，如：{x: 0, y: 0}
+  /**
+   * @property onPress
+   * @type Function
+   * @default NOOP
+   * @description 点击回调，参数为点击元素中心坐标，如：{x: 0, y: 0}
+   */
   onPress: PropTypes.func,
-  // 子元素
+  /**
+   * @property children
+   * @type Element
+   * @default null
+   * @description 子元素
+   */
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
-  // 自定义样式
+  /**
+   * @property style
+   * @type Object
+   * @default null
+   * @description 自定义样式
+   */
   style: View.propTypes.style,
 };
 Emitter.defaultProps = {

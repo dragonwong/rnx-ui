@@ -1,3 +1,23 @@
+/**
+ * @component Dialog
+ * @version 0.17.0
+ * @description 警告弹框
+ * @example
+ * import Dialog from 'rnx-ui/Dialog';
+ * function Example(props) {
+ * return (
+ *   <Dialog
+ *     visible={this.state.visible}
+ *     title="无法连接服务器"
+ *     message="未能完成所请求的操作，因为与服务器的通信出错。"
+ *     buttons={[{
+ *       text: '吼啊',
+ *       onPress: this.hide,
+ *     }]}
+ *   />
+ * );
+ * }
+ */
 import React, {
   Component,
   PropTypes,
@@ -107,19 +127,57 @@ class Dialog extends Component {
 }
 
 Dialog.propTypes = {
-  // 是否显示
+  /**
+   * @property visible
+   * @type Boolean
+   * @default false
+   * @description 是否显示
+   */
   visible: PropTypes.bool,
-  // 标题
+  /**
+   * @property title
+   * @type String
+   * @default ''
+   * @description 标题
+   */
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
-  // 标题文本样式（title 为字符串时才生效）
+  /**
+   * @property titleStyle
+   * @type Object
+   * @default null
+   * @description 标题文本样式（title 为字符串时才生效）
+   */
   titleStyle: Text.propTypes.style,
-  // 内容
+  /**
+   * @property message
+   * @type String
+   * @default ''
+   * @description 内容
+   */
   message: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
-  // 标题文本样式（title 为字符串时才生效）
+  /**
+   * @property messageStyle
+   * @type Object
+   * @default null
+   * @description 标题文本样式（title 为字符串时才生效）
+   */
   messageStyle: Text.propTypes.style,
-  // 按钮容器样式
+  /**
+   * @property buttonsContainerStyle
+   * @type Object
+   * @default null
+   * @description 按钮容器样式
+   */
   buttonsContainerStyle: View.propTypes.style,
-  // 按钮
+  /**
+   * @property buttons
+   * @type Array
+   * @default []
+   * @param {String} text 按钮文本
+   * @param {Object} style 按钮样式
+   * @param {Function} onPress 按钮点击回调
+   * @description 按钮
+   */
   buttons: PropTypes.arrayOf(PropTypes.shape({
     /* eslint-disable */
     // 按钮文本
@@ -130,9 +188,19 @@ Dialog.propTypes = {
     onPress: PropTypes.func,
     /* eslint-enable */
   })),
-  // 弹框样式
+   /**
+   * @property style
+   * @type Object
+   * @default null
+   * @description 弹框样式
+   */
   style: View.propTypes.style,
-  // 遮罩层样式
+  /**
+   * @property overlayStyle
+   * @type Object
+   * @default null
+   * @description 遮盖层样式
+   */
   overlayStyle: View.propTypes.style,
 };
 Dialog.defaultProps = {

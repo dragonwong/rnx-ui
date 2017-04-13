@@ -1,3 +1,9 @@
+/**
+ * @component Alert
+ * @version 0.17.0
+ * @description 警告弹框组件
+ * ![Alert](http://wx4.sinaimg.cn/mw690/4c8b519dly1fduijhj36dg20hs0ws48p.gif)
+ */
 import React, {
   PropTypes,
 } from 'react';
@@ -26,11 +32,26 @@ class Alert extends Dialog {
 
 Alert.propTypes = {
   ...Dialog.propTypes,
-  // 按钮文本
+  /**
+     * @property buttonText
+     * @type String
+     * @default '好'
+     * @description 按钮文本
+     */
   buttonText: PropTypes.string,
-  // 按钮文本样式
+  /**
+     * @property buttonTextStyle
+     * @type Object
+     * @default null
+     * @description 按钮文本样式
+     */
   buttonTextStyle: Text.propTypes.style,
-  // 按钮点击回调
+   /**
+     * @property onPress
+     * @type Function
+     * @default NOOP
+     * @description 按钮点击回调
+     */
   onPress: PropTypes.func,
 };
 Alert.defaultProps = {

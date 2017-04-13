@@ -1,5 +1,10 @@
+
 /**
- * 菊花加载中组件
+ * @component Loading
+ * @version 0.17.0
+ * @description 菊花加载中组件
+ *
+ * ![ImgHolder](https://github.com/wangkexinW/htmldoc/blob/master/Loading/demo.png?raw=true)
  */
 import React, {
   PropTypes,
@@ -49,15 +54,40 @@ class Loading extends Component {
 }
 
 Loading.propTypes = {
-  // 显示开关
+  /**
+   * @property visible
+   * @type Boolean
+   * @default false
+   * @description 显示开关
+   */
   visible: PropTypes.bool.isRequired,
-  // 遮罩层样式
+   /**
+   * @property overlayStyle
+   * @type Object
+   * @default Null
+   * @description 遮罩层样式
+   */
   overlayStyle: View.propTypes.style,
-  // 菊花容器样式
+  /**
+   * @property loaderStyle
+   * @type Object
+   * @default Null
+   * @description 菊花容器样式
+   */
   loaderStyle: View.propTypes.style,
-  // 菊花图标的颜色
+  /**
+   * @property color
+   * @type String
+   * @default '#fff'
+   * @description 菊花图标的颜色
+   */
   color: ActivityIndicator.propTypes.color,
-  // 菊花图标的大小
+  /**
+   * @property size
+   * @type String
+   * @default 'small'
+   * @description 菊花图标的大小
+   */
   size: ActivityIndicator.propTypes.size,
 };
 Loading.defaultProps = {

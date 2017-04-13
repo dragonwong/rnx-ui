@@ -1,5 +1,10 @@
+
 /**
- * 带占位的图片组件
+ * @component ImgHolder
+ * @version 0.17.0
+ * @description 带占位的图片组件
+ *
+ * ![ImgHolder](https://github.com/wangkexinW/htmldoc/blob/master/ImgHolder/demo.gif?raw=true)
  */
 import React, {
   PropTypes,
@@ -45,13 +50,35 @@ class ImgHolder extends Component {
 }
 
 ImgHolder.propTypes = {
-  // 自定义样式
+  /**
+   * @property style
+   * @type Object
+   * @default null
+   * @description 自定义样式
+   */
   style: View.propTypes.style,
-  // 图片样式
+  /**
+   * @property imgStyle
+   * @type Object
+   * @default null
+   * @description 图片样式
+   */
   imgStyle: Image.propTypes.style,
-  // 占位元素
+  /**
+   * @property holder
+   * @type Object
+   * @default null
+   * @description 占位元素
+   */
   holder: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
-  // 图片资源
+  /**
+   * @property soource
+   * @type Object
+   * @default {
+   *      uri: '',
+   *  },
+   * @description 图片资源
+   */
   source: PropTypes.oneOfType([PropTypes.object, PropTypes.number]).isRequired,
 };
 ImgHolder.defaultProps = {

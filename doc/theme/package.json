@@ -1,0 +1,75 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ydoc-theme-library",
+        "scope": null,
+        "escapedName": "ydoc-theme-library",
+        "name": "ydoc-theme-library",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/wangkexin/Documents/word/rnx-ui"
+    ]
+  ],
+  "_from": "ydoc-theme-library@latest",
+  "_id": "ydoc-theme-library@0.0.1",
+  "_inCache": true,
+  "_location": "/ydoc-theme-library",
+  "_nodeVersion": "6.2.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/ydoc-theme-library-0.0.1.tgz_1489922229379_0.27464740350842476"
+  },
+  "_npmUser": {
+    "name": "wenbo.dong",
+    "email": "wenbo.dong@qunar.com"
+  },
+  "_npmVersion": "3.8.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ydoc-theme-library",
+    "scope": null,
+    "escapedName": "ydoc-theme-library",
+    "name": "ydoc-theme-library",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ydoc-theme-library/-/ydoc-theme-library-0.0.1.tgz",
+  "_shasum": "d04d545d411e809442a82d89fb7bfbfed99989ec",
+  "_shrinkwrap": null,
+  "_spec": "ydoc-theme-library",
+  "_where": "/Users/wangkexin/Documents/word/rnx-ui",
+  "author": {
+    "name": "dwb"
+  },
+  "dependencies": {},
+  "description": "a theme for ydoc",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "d04d545d411e809442a82d89fb7bfbfed99989ec",
+    "tarball": "https://registry.npmjs.org/ydoc-theme-library/-/ydoc-theme-library-0.0.1.tgz"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "wenbo.dong",
+      "email": "wenbo.dong@qunar.com"
+    }
+  ],
+  "name": "ydoc-theme-library",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.1"
+}

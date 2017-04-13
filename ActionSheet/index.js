@@ -1,3 +1,15 @@
+/**
+ * @component ActionSheet
+ * @version 0.17.0
+ * @description 上拉按钮组
+ * @example
+ * import ActionSheet from 'rnx-ui/ActionSheet';
+ * function Example(props) {
+ * return (
+ *   <ActionSheet />
+ * );
+ * }
+ */
 import React, { Component, PropTypes } from 'react';
 import {
   Platform,
@@ -75,40 +87,100 @@ class ActionSheet extends Component {
 }
 
 ActionSheet.propTypes = {
-  // 显示开关
+    /**
+     * @property visible
+     * @description 显示开关
+     * @default false
+     */
   visible: Sheet.propTypes.visible,
   // 按钮组
   btnList: PropTypes.arrayOf(PropTypes.shape({
     /* eslint-disable */
-    // 按钮样式
+    /**
+     * @property style
+     * @description 按钮样式
+     * @default null
+     */
     style: View.propTypes.style,
-    // 按钮文字
+    /**
+     * @property text
+     * @description 按钮文字
+     * @default '确定'
+     */
     text: PropTypes.string,
-    // 按钮文字样式
+    /**
+     * @property textStyle
+     * @description 按钮文字样式
+     * @default null
+     */
     textStyle: Text.propTypes.style,
-    // 按钮点击回调
+    /**
+     * @property onPress
+     * @description 按钮点击回调
+     * @default NOOP
+     */
     onPress: PropTypes.func,
     /* eslint-enable */
   })),
-  // 统一按钮样式
+    /**
+     * @property btnStyle
+     * @description 统一按钮样式
+     * @default null
+     */
   btnStyle: View.propTypes.style,
-  // 统一按钮文字样式
+    /**
+     * @property btnTextStyle
+     * @description 统一按钮文字样式
+     * @default null
+     */
   btnTextStyle: Text.propTypes.style,
-  // 取消按钮样式
+    /**
+     * @property cancelBtnStyle
+     * @description 取消按钮样式
+     * @default null
+     */
   cancelBtnStyle: View.propTypes.style,
-  // 取消按钮文字
+    /**
+     * @property cancelBtnText
+     * @description 取消按钮文字
+     * @default '取消'
+     */
   cancelBtnText: PropTypes.string,
-  // 取消按钮文字样式
+    /**
+     * @property cancelBtnTextStyle
+     * @description 取消按钮文字样式
+     * @default null
+     */
   cancelBtnTextStyle: Text.propTypes.style,
-  // 遮罩层样式
+    /**
+     * @property overlayStyle
+     * @description 遮罩层样式
+     * @default null
+     */
   overlayStyle: Sheet.propTypes.overlayStyle,
-  // 关闭回调（动画结束时）
+    /**
+     * @property onClose
+     * @description 关闭回调（动画结束时）
+     * @default NOOP
+     */
   onClose: Sheet.propTypes.onClose,
-  // 动画时长
+    /**
+     * @property duration
+     * @description 动画时长
+     * @default 200
+     */
   duration: Sheet.propTypes.duration,
-  // 自定义样式
+    /**
+     * @property style
+     * @description 自定义样式
+     * @default null
+     */
   style: View.propTypes.style,
-  // 按钮点击透明度变化
+    /**
+     * @property underlayColor
+     * @description 按钮点击透明度变化
+     * @default '#eee'
+     */
   underlayColor: PropTypes.string,
 };
 ActionSheet.defaultProps = {

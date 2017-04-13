@@ -1,3 +1,27 @@
+/**
+ * @component CardView
+ * @version 0.17.0
+ * @description 卡片视图
+ * 以卡片样式浏览，并可以设置激活卡片样式。
+ * 通过 `getEl` 属性获取 CardView 实例，调用 `scrollToCard` 方法可以
+ * ⚠️ 注意
+ * CardView 会为卡片添加 `isActiveRnxUiCardView` 属性，激活卡片值为 `true`，其他卡片是 `false`。
+ * ![CardView](http://wx3.sinaimg.cn/mw690/4c8b519dly1fdgvohgt53g20hs0wsaip.gif)
+ * @example
+ * import CardView from 'rnx-ui/CardView';
+ * function Example(props) {
+ * return (
+ *  <CardView
+ *     style={styles.cardView}
+ *     cards={this.state.cards}
+ *     cardGap={20}
+ *     onChange={this.onChange}
+ *   />
+ * );
+ * }
+ * @method scrollToCard(index)
+ *  index: {Number} 卡片序号 跳转至指定卡片    有问题 回来看
+ */
 import React, {
   Component,
   PropTypes,
@@ -24,7 +48,6 @@ class CardView extends Component {
     super(props);
 
     props.getEl(this);
-
     // 滚动坐标
     this.x = 0;
     // 每张卡片所占空间宽度
@@ -46,9 +69,9 @@ class CardView extends Component {
 
     this.scaleArr = props.cards.map((item, index) => {
       if (this.currentIndex === index) {
-        return 1 + (1 * this.props.scaleCoefficient);
+        return 1;
       }
-      return 1;
+      return 1 - this.props.scaleCoefficient;
     });
   }
 
@@ -97,9 +120,9 @@ class CardView extends Component {
         if (typeof currentScale === 'number') {
           return currentScale;
         } else if (this.currentIndex === index) {
-          return 1 + (1 * this.props.scaleCoefficient);
+          return 1;
         }
-        return 1;
+        return 1 - this.props.scaleCoefficient;
       });
 
       this.scaleArr = scaleArr;
@@ -148,7 +171,7 @@ class CardView extends Component {
       if (k > 1) {
         k = 1;
       }
-      return 1 + ((1 - k) * this.props.scaleCoefficient);
+      return 1 - (k * this.props.scaleCoefficient);
     });
 
     this.setState({
@@ -288,13 +311,33 @@ class CardView extends Component {
 }
 
 CardView.propTypes = {
-  // 样式
+  /**
+   * @property style
+   * @type Object
+   * @default null
+   * @description 样式
+   */
   style: View.propTypes.style,
-  // 缩放系数
+  /**
+   * @property scaleCoefficient
+   * @type Number
+   * @default 0.1
+   * @description 缩放系数
+   */
   scaleCoefficient: PropTypes.number,
-  // 当前卡片样式
+  /**
+   * @property activeCardStyle
+   * @type Object
+   * @default null
+   * @description 当前卡片样式
+   */
   activeCardStyle: View.propTypes.style,
-  // 卡片数组
+  /**
+   * @property cards
+   * @type Array
+   * @default []
+   * @description 卡片数组
+   */
   cards: PropTypes.arrayOf(PropTypes.shape({
     /* eslint-disable */
     // 数组循环优化标示 key
@@ -303,27 +346,82 @@ CardView.propTypes = {
     card: PropTypes.element,
     /* eslint-enable */
   })),
-  // 卡片宽度
+  /**
+   * @property cardWidth
+   * @type Number
+   * @default 200
+   * @description 卡片宽度
+   */
   cardWidth: PropTypes.number,
-  // 卡片间隔
+  /**
+   * @property cardGap
+   * @type Number
+   * @default 0
+   * @description 卡片间隔
+   */
   cardGap: PropTypes.number,
-  // 自定义内容容器样式
+  /**
+   * @property contentContainerStyle
+   * @type Object
+   * @default null
+   * @description 自定义内容容器样式
+   */
   contentContainerStyle: View.propTypes.style,
-  // 卡片切换时的回调，参数为当前激活的卡片序号
+  /**
+   * @property onChange
+   * @type Function
+   * @default NOOP
+   * @description 卡片切换时的回调，参数为当前激活的卡片序号
+   */
   onChange: PropTypes.func,
-  // 卡片经过时的回调，参数为当前经过的卡片序号
+  /**
+   * @property onPass
+   * @type Function
+   * @default NOOP
+   * @description 卡片经过时的回调，参数为当前经过的卡片序号
+   */
   onPass: PropTypes.func,
-  // 速度指数
+  /**
+   * @property v
+   * @type Number
+   * @default 20
+   * @description 速度指数
+   */
   v: PropTypes.number,
-  // 手势滑动触发最小距离（默认需要滑动卡片一半的距离）
+  /**
+   * @property minGestureDistance
+   * @type Number
+   * @default null
+   * @description 手势滑动触发最小距离（默认需要滑动卡片一半的距离）
+   */
   minGestureDistance: PropTypes.number,
-  // 最大可访问的卡片序号
+  /**
+   * @property maxIndex
+   * @type Number
+   * @default null
+   * @description 最大可访问的卡片序号
+   */
   maxIndex: PropTypes.number,
-  // 获取元素回调
+  /**
+   * @property getEl
+   * @type Function
+   * @default NOOP
+   * @description 获取元素回调
+   */
   getEl: PropTypes.func,
-  // 到达顶部回调
+  /**
+   * @property onStartReached
+   * @type Function
+   * @default NOOP
+   * @description 到达顶部回调
+   */
   onStartReached: PropTypes.func,
-  // 到达底部回调
+  /**
+   * @property onEndReached
+   * @type Function
+   * @default NOOP
+   * @description 到达底部回调
+   */
   onEndReached: PropTypes.func,
 };
 CardView.defaultProps = {

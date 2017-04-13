@@ -1,3 +1,16 @@
+/**
+ * @component Sheet
+ * @version 0.17.0
+ * @description 底部弹层
+ *  底部弹层弹出会有动画。
+ * # Other Points
+ * 子组件点击事件会穿透从而被遮罩层捕获，如需处理，请在子组件上加上点击事件进行拦截
+ * 内部封装了 Overlay 组件，请参考 [Overlay](https://github.com/dragonwong/rnx-ui/tree/master/Overlay)
+ * Todo
+ * bugfix：`visible` 初始状态为 true 时只有遮罩
+ *
+ * ![Sheet](https://github.com/wangkexinW/htmldoc/blob/master/Sheet/demo.gif?raw=true)
+ */
 import React, {
   Component,
   PropTypes,
@@ -125,19 +138,54 @@ class Sheet extends Component {
 }
 
 Sheet.propTypes = {
-  // 自定义样式
+  /**
+   * @property style
+   * @type Object
+   * @default null
+   * @description  自定义样式
+   */
   style: View.propTypes.style,
-  // 显示开关
+  /**
+   * @property visible
+   * @type Boolean
+   * @default false
+   * @description  显示开关
+   */
   visible: PropTypes.bool.isRequired,
-  // 遮罩层样式
+  /**
+   * @property overlayStyle
+   * @type Object
+   * @default null
+   * @description  遮盖层样式
+   */
   overlayStyle: View.propTypes.style,
-  // 关闭回调（动画结束时）
+  /**
+   * @property onClose
+   * @type Function
+   * @default NOOP
+   * @description  关闭回调（动画结束时）
+   */
   onClose: PropTypes.func,
-  // 遮罩点击事件
+  /**
+   * @property onPressOverlay
+   * @type Function
+   * @default NOOP
+   * @description  遮罩点击事件
+   */
   onPressOverlay: PropTypes.func,
-  // 子元素
+  /**
+   * @property children
+   * @type Element
+   * @default null
+   * @description  子元素
+   */
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
-  // 动画时长
+  /**
+   * @property duration
+   * @type Number
+   * @default 200
+   * @description  动画时长
+   */
   duration: PropTypes.number,
 };
 Sheet.defaultProps = {

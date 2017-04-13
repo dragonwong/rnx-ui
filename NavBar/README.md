@@ -4,7 +4,7 @@
 
 ## Demo
 
-![navBar demo](demo.png)
+![NavBar demo](demo.png)
 
 ## Props
 
