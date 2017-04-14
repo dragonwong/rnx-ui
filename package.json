@@ -37,12 +37,9 @@
   },
   "pre-commit": [
     "lint"
-<<<<<<< HEAD
+
   ],
   "dependencies": {
    
   }
-=======
-  ]
->>>>>>> a01fa805ec32e961fa1d089854708d62b492cab6
 }
