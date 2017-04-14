@@ -3,7 +3,6 @@
  * @version 0.17.0
  * @description 像素（px）转虚拟像素（dp）方法
  *
-<<<<<<< HEAD
  *  React Native 的长度单位为 dp，意思是独立像素，不是真实的物理像素，1dp 在不同 PixelRatio（像素比）的设备上会等于不同 px，
  *  比如 iPhone 456 是 2px，iPhone 6s 是 3px，所以在 rn 代码里写一个宽度为 1 的边框，在 iPhone 5 上看上去会有 2 像素宽，
  *  在 iPhone 6s 上看上去会有 3 像素宽。（dp 即 device-independent pixels，或 dip，表示设备独立像素；
@@ -11,8 +10,6 @@
  *   `transPxToDp` 就是为了解决这个问题。使用了 `transPxToDp` 之后，设置 1 的宽度，
  *  在 iPhone 5 实际设置为 0.5，在 iPhone 6s 实际设置为 0.33。
  * ![TransPxToDp](https://github.com/wangkexinW/rnx-ui/blob/doc/util/transPxToDp/TransPxToDp.png?raw=true)
-=======
- * ![TransPxToDp](https://github.com/wangkexinW/htmldoc/blob/master/util/transPxToDp/demo.png?raw=true)
  *
  * React Native 的长度单位为 dp，意思是独立像素，不是真实的物理像素，1dp 在不同 PixelRatio（像素比）的设备上会等于不同 px,
  * 比如 iPhone 456 是 2px，iPhone 6s 是 3px，所以在 rn 代码里写一个宽度为 1 的边框，在 iPhone 5 上看上去会有 2 像素宽，
@@ -31,7 +28,6 @@
  *
  * > 在屏幕像素比（PixelRatio）为 3.75 以下设备，`hairlineWidth` 和 `transPxToDp(1)` 是一样的，
  * > 在 3.75 及以上设备，`hairlineWidth` 是 `transPxToDp(1)` 的两倍或两倍以上。
->>>>>>> a01fa805ec32e961fa1d089854708d62b492cab6
  */
 import { PixelRatio } from 'react-native';
 
