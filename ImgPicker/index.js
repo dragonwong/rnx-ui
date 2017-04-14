@@ -1,6 +1,6 @@
 /**
  * @component ImgPicker
- * @version 0.17.0
+ * @version 0.11.7
  * @description 图片选择组件
  * @example
  * import ImgPicker from 'rnx-ui/ImgPicker';

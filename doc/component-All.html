@@ -70,8 +70,8 @@
                     <ul class="nav docs-sidenav">
                         
                         
-                        <!-- <li  > -->
-                        <li >
+                        <!-- <li  class="active"   class="active" > -->
+                        <li  class="active" >
                             
                             <a href="component-All.html">All</a>
                             
@@ -110,7 +110,7 @@
                         
                         
                         
-                        <!-- <li   class="active" > -->
+                        <!-- <li  > -->
                         <li >
                             
                             <a href="javascript:void(0);">Data Entry</a>
@@ -120,9 +120,9 @@
                         
                         
                         
-                        <ul class="nav docs-sidenav-extend"  style="display:block;"    style="display:block;" >
+                        <ul class="nav docs-sidenav-extend"  >
                         
-                            <li  class="active" >
+                            <li >
                                 <a href="component-AddAndSubtract.html">AddAndSubtract</a>
                             </li>
                         
@@ -429,13 +429,12 @@
 
                 
                 <div class="docs-section">
-<h2 id="AddAndSubtract">
-    AddAndSubtract
+<h2 id="All">
+    All
     <small></small>
-    <span class="yo-badge yo-badge-danger">0.17.0</span>
+    
 </h2>
-<div class="api-content"><p>加减法动画组件</p>
-<p><img src="http://wx3.sinaimg.cn/mw690/4c8b519dly1fcaq7v2pnvg20ho0wgh0z.gif" alt="AddAndSubtract"></p>
+<div class="api-content"><p>页面级容器，内置了 <code>StatusBar</code>。</p>
 </div>
 <!-- 使用说明begin -->
 
@@ -445,168 +444,21 @@
 <div class="con-head">属性</div>
 
 <blockquote class="api">
-    <h3 id="num" class="subject">
-    <strong>num</strong>
-     <span class="prop-type">{ Number }</span>
+    <h3 id="children" class="subject">
+    <strong>children</strong>
+     <span class="prop-type">{ Element }</span>
     
-    <a class="hashlink" href="#num">#</a>
+    <a class="hashlink" href="#children">#</a>
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>数字</p>
+    <div><p>子元素</p>
 </div>
     
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> 0
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="onPressAdder" class="subject">
-    <strong>onPressAdder</strong>
-     <span class="prop-type">{ Function }</span>
-    
-    <a class="hashlink" href="#onPressAdder">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>加法按钮点击事件</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> NOOP
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="onPressSubtracter" class="subject">
-    <strong>onPressSubtracter</strong>
-     <span class="prop-type">{ Function }</span>
-    
-    <a class="hashlink" href="#onPressSubtracter">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>减法按钮点击事件</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> NOOP
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="duration" class="subject">
-    <strong>duration</strong>
-     <span class="prop-type">{ Number }</span>
-    
-    <a class="hashlink" href="#duration">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>动画时间</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> 200
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="distance" class="subject">
-    <strong>distance</strong>
-     <span class="prop-type">{ Number }</span>
-    
-    <a class="hashlink" href="#distance">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>减法按钮移动距离</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> 30
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="deg" class="subject">
-    <strong>deg</strong>
-     <span class="prop-type">{ Number }</span>
-    
-    <a class="hashlink" href="#deg">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>减法旋转角度</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> 180
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="easing" class="subject">
-    <strong>easing</strong>
-     <span class="prop-type">{ Function }</span>
-    
-    <a class="hashlink" href="#easing">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>动画函数</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> t => t
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="btnWidth" class="subject">
-    <strong>btnWidth</strong>
-     <span class="prop-type">{ Number }</span>
-    
-    <a class="hashlink" href="#btnWidth">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>按钮宽度</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> 30
+    <small class="text-muted">默认值:</small> null
 </p>
 
 
@@ -634,194 +486,42 @@
 
 
 <blockquote class="api">
-    <h3 id="adderBtnStyle" class="subject">
-    <strong>adderBtnStyle</strong>
-     <span class="prop-type">{ Object }</span>
+    <h3 id="statusBarBgColor" class="subject">
+    <strong>statusBarBgColor</strong>
+     <span class="prop-type">{ String }</span>
     
-    <a class="hashlink" href="#adderBtnStyle">#</a>
+    <a class="hashlink" href="#statusBarBgColor">#</a>
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>加法按钮样式</p>
+    <div><p>StatusBar 背景色</p>
 </div>
     
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> null
+    <small class="text-muted">默认值:</small> 'transparent'
 </p>
 
 
 
 
 <blockquote class="api">
-    <h3 id="adderStyle" class="subject">
-    <strong>adderStyle</strong>
-     <span class="prop-type">{ Object }</span>
+    <h3 id="statusBarBgStyle" class="subject">
+    <strong>statusBarBgStyle</strong>
+     <span class="prop-type">{ Stirng }</span>
     
-    <a class="hashlink" href="#adderStyle">#</a>
+    <a class="hashlink" href="#statusBarBgStyle">#</a>
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>加法元素样式</p>
+    <div><p>StatusBar 样式类型</p>
 </div>
     
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="subtracterWrapperStyle" class="subject">
-    <strong>subtracterWrapperStyle</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#subtracterWrapperStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>减法按钮容器样式</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="subtracterBtnStyle" class="subject">
-    <strong>subtracterBtnStyle</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#subtracterBtnStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>减法按钮样式</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="subtracterStyle" class="subject">
-    <strong>subtracterStyle</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#subtracterStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>减法元素样式</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="textStyle" class="subject">
-    <strong>textStyle</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#textStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>自定义字体样式</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="adder" class="subject">
-    <strong>adder</strong>
-     <span class="prop-type">{ Element }</span>
-    
-    <a class="hashlink" href="#adder">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>加法按钮</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="subtracter" class="subject">
-    <strong>subtracter</strong>
-     <span class="prop-type">{ Element }</span>
-    
-    <a class="hashlink" href="#subtracter">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>减法按钮</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> <Text style={styles.adderText}>+</Text>
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="hitSlop" class="subject">
-    <strong>hitSlop</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#hitSlop">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>按钮热区</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small>  {
-top: 5,
-left: 5,
-right: 5,
-bottom: 5,
-},
+    <small class="text-muted">默认值:</small> 'light-content'
 </p>
 
 
@@ -831,16 +531,12 @@ bottom: 5,
 
 
 <div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import Template from 'rnx-ui/Template';
+<pre class="ydoc-example" ><code>import All from 'rnx-ui/All';
 function Example(props) {
-return (
-   &lt;AddAndSubtract
-     num={this.state.num}
-     onPressAdder={this.add}
-     onPressSubtracter={this.subtract}
-   /&gt;
-  );
- }</code></pre>
+  return (
+    &lt;All /&gt;
+   );
+  }</code></pre>
 
 
 </div>

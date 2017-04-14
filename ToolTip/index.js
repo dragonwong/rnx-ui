@@ -1,6 +1,6 @@
 /**
  * @component ToolTip
- * @version 0.17.0
+ * @version 0.16.0
  * @description 提示框
  *
  * ![AddAndSubtract](http://wx2.sinaimg.cn/mw690/4c8b519dly1fdlfmi544kg20hs0wswjd.gif)

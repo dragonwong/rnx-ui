@@ -1,6 +1,6 @@
 /**
  * @component ActionSheet
- * @version 0.17.0
+ * @version 0.11.7
  * @description 上拉按钮组
  * @example
  * import ActionSheet from 'rnx-ui/ActionSheet';

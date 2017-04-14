@@ -37,9 +37,8 @@
   },
   "pre-commit": [
     "lint"
-
   ],
   "dependencies": {
-   
+    "ydoc-theme-library": "0.0.1"
   }
 }

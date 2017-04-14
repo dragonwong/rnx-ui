@@ -1,7 +1,7 @@
 /**
  * 遮罩层
  * @component Overlay
- * @version 0.17.0
+ * @version 0.16.0
  * @description 遮罩层
  *
  * ⚠️ 注意

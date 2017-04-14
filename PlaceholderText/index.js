@@ -1,6 +1,6 @@
 /**
  * @component PlaceholderText
- * @version 0.17.0
+ * @version 0.11.9
  * @description 有占位元素的文本显示组件
  * @example
  * import PlaceholderText from 'rnx-ui/PlaceholderText';

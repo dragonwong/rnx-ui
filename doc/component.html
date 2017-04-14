@@ -73,6 +73,15 @@
                         <!-- <li  > -->
                         <li >
                             
+                            <a href="component-All.html">All</a>
+                            
+                        </li>
+                        
+                        
+                        
+                        <!-- <li  > -->
+                        <li >
+                            
                             <a href="javascript:void(0);">Navigtor</a>
                             
                         </li>
@@ -420,13 +429,12 @@
 
                 
                 <div class="docs-section">
-<h2 id="NavBar">
-    NavBar
+<h2 id="All">
+    All
     <small></small>
-    <span class="yo-badge yo-badge-danger">0.17.0</span>
+    
 </h2>
-<div class="api-content"><p>导航栏</p>
-<p><img src="https://github.com/wangkexinW/rnx-ui/blob/doc/NavBar/NavBar.png?raw=true" alt="NavBar"></p>
+<div class="api-content"><p>页面级容器，内置了 <code>StatusBar</code>。</p>
 </div>
 <!-- 使用说明begin -->
 
@@ -434,6 +442,27 @@
 <div class="con-list-item">
 
 <div class="con-head">属性</div>
+
+<blockquote class="api">
+    <h3 id="children" class="subject">
+    <strong>children</strong>
+     <span class="prop-type">{ Element }</span>
+    
+    <a class="hashlink" href="#children">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>子元素</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> null
+</p>
+
+
+
 
 <blockquote class="api">
     <h3 id="style" class="subject">
@@ -450,301 +479,49 @@
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> Null
+    <small class="text-muted">默认值:</small> null
 </p>
 
 
 
 
 <blockquote class="api">
-    <h3 id="statusBarHeight" class="subject">
-    <strong>statusBarHeight</strong>
-     <span class="prop-type">{ Number }</span>
-    
-    <a class="hashlink" href="#statusBarHeight">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>statusBar 高度</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> STATUS_BAR_HEIGHT
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="headerHeight" class="subject">
-    <strong>headerHeight</strong>
-     <span class="prop-type">{ Number }</span>
-    
-    <a class="hashlink" href="#headerHeight">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>header 高度</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> HEADER_HEIGHT
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="title" class="subject">
-    <strong>title</strong>
+    <h3 id="statusBarBgColor" class="subject">
+    <strong>statusBarBgColor</strong>
      <span class="prop-type">{ String }</span>
     
-    <a class="hashlink" href="#title">#</a>
+    <a class="hashlink" href="#statusBarBgColor">#</a>
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>标题</p>
+    <div><p>StatusBar 背景色</p>
 </div>
     
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> ''
+    <small class="text-muted">默认值:</small> 'transparent'
 </p>
 
 
 
 
 <blockquote class="api">
-    <h3 id="titleStyle" class="subject">
-    <strong>titleStyle</strong>
-     <span class="prop-type">{ Object }</span>
+    <h3 id="statusBarBgStyle" class="subject">
+    <strong>statusBarBgStyle</strong>
+     <span class="prop-type">{ Stirng }</span>
     
-    <a class="hashlink" href="#titleStyle">#</a>
+    <a class="hashlink" href="#statusBarBgStyle">#</a>
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>标题文本样式（title 为字符串时才生效）</p>
+    <div><p>StatusBar 样式类型</p>
 </div>
     
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="titleGap" class="subject">
-    <strong>titleGap</strong>
-     <span class="prop-type">{ Number }</span>
-    
-    <a class="hashlink" href="#titleGap">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>标题到左右两边的距离</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> 50
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="leftBtn" class="subject">
-    <strong>leftBtn</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#leftBtn">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>左侧按钮</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="leftEvent" class="subject">
-    <strong>leftEvent</strong>
-     <span class="prop-type">{ Function }</span>
-    
-    <a class="hashlink" href="#leftEvent">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>左侧按钮点击事件</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> NOOP
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="leftBtnStyle" class="subject">
-    <strong>leftBtnStyle</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#leftBtnStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>左侧按钮文本样式（leftBtn 为字符串时才生效）</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="leftBtnDisabled" class="subject">
-    <strong>leftBtnDisabled</strong>
-     <span class="prop-type">{ Boolean }</span>
-    
-    <a class="hashlink" href="#leftBtnDisabled">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>左侧按钮禁用</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> false
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="rightBtn" class="subject">
-    <strong>rightBtn</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#rightBtn">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>右侧按钮</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="rightEvent" class="subject">
-    <strong>rightEvent</strong>
-     <span class="prop-type">{ Function }</span>
-    
-    <a class="hashlink" href="#rightEvent">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>右侧按钮文本样式</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> NOOP
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="rightBtnStyle" class="subject">
-    <strong>rightBtnStyle</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#rightBtnStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>右侧按钮文本样式（rightBtn 为字符串时才生效）</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="rightBtnDisabled" class="subject">
-    <strong>rightBtnDisabled</strong>
-     <span class="prop-type">{ Boolean }</span>
-    
-    <a class="hashlink" href="#rightBtnDisabled">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>右侧按钮禁用</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> false
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="activeOpacity" class="subject">
-    <strong>activeOpacity</strong>
-     <span class="prop-type">{ Number }</span>
-    
-    <a class="hashlink" href="#activeOpacity">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>按钮点击透明度变化</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> ACTIVE_OPACITY
+    <small class="text-muted">默认值:</small> 'light-content'
 </p>
 
 
@@ -752,6 +529,14 @@
 
 
 
+
+<div class="con-head">示例</div>
+<pre class="ydoc-example" ><code>import All from 'rnx-ui/All';
+function Example(props) {
+  return (
+    &lt;All /&gt;
+   );
+  }</code></pre>
 
 
 </div>

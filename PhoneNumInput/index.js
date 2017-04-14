@@ -1,6 +1,6 @@
 /**
  * @component PhoneNumInput
- * @version 0.17.0
+ * @version 0.13.1
  * @description 手机号码输入框组件
  *
  * ![PhoneNumInput](https://github.com/wangkexinW/rnx-ui/blob/doc/PhoneNumInput/phoneNumInput.png?raw=true)

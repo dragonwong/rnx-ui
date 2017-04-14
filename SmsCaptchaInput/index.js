@@ -1,6 +1,6 @@
 /**
  * @component SmsCaptchaInput
- * @version 0.17.0
+ * @version 0.13.1
  * @description 短信验证码输入框
  *  短信验证码输入框组件有三种状态：
  *

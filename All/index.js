@@ -1,5 +1,13 @@
 /**
- * 页面容器组件
+ * @component All
+ * @description 页面级容器，内置了 `StatusBar`。
+ * @example
+ * import All from 'rnx-ui/All';
+ *  function Example(props) {
+ *   return (
+ *     <All />
+ *   );
+ *  }
  */
 import React, {
   PropTypes,
@@ -34,13 +42,33 @@ class All extends Component {
 }
 
 All.propTypes = {
-  // 子元素
+  /**
+   * @property children
+   * @type Element
+   * @default null
+   * @description 子元素
+   */
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
-  // 自定义样式
+  /**
+   * @property style
+   * @type Object
+   * @default null
+   * @description 自定义样式
+   */
   style: View.propTypes.style,
-  // StatusBar 背景色
+  /**
+   * @property statusBarBgColor
+   * @type String
+   * @default 'transparent'
+   * @description StatusBar 背景色
+   */
   statusBarBgColor: PropTypes.string,
-  // StatusBar 样式类型
+  /**
+   * @property statusBarBgStyle
+   * @type Stirng
+   * @default 'light-content'
+   * @description StatusBar 样式类型
+   */
   statusBarStyle: PropTypes.string,
 };
 All.defaultProps = {

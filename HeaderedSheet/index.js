@@ -1,6 +1,6 @@
 /**
  * @component HeaderedSheet
- * @version 0.17.0
+ * @version 0.12.0
  * @description 有标题栏的底部弹层
  *
  * ![navBar demo](https://github.com/wangkexinW/rnx-ui/blob/doc/HeaderedSheet/HeaderedSheet.gif?raw=true)

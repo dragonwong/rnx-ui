@@ -1,6 +1,6 @@
 /**
  * @component NavBar
- * @version 0.17.0
+ * @version 0.11.6
  * @description 导航栏
  *
  * ![NavBar](https://github.com/wangkexinW/rnx-ui/blob/doc/NavBar/NavBar.png?raw=true)

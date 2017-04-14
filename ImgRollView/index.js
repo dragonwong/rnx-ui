@@ -1,6 +1,6 @@
 /**
  * @component ImgRollView
- * @version 0.17.0
+ * @version 0.13.0
  * @description 图片多选组件
  *
  *  ⚠️ 注意
@@ -308,7 +308,8 @@ ImgRollView.propTypes = {
    * @property assetType
    * @type String
    * @default 'Photos'
-   * @param {String} 'Videos'
+   * @param {String} 'Photos' 图片资源
+   * @param {String} 'Videos'  视频资源
    * @param {String} 'All'
    * @description 静态资源类型
    */
