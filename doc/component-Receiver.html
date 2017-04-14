@@ -258,9 +258,9 @@
                         
                         
                         
-                        <ul class="nav docs-sidenav-extend"  style="display:block;"    style="display:block;" >
+                        <ul class="nav docs-sidenav-extend"    style="display:block;" >
                         
-                            <li  class="active" >
+                            <li >
                                 <a href="component-ActionSheet.html">ActionSheet</a>
                             </li>
                         
@@ -323,7 +323,7 @@
                         
                         
                         
-                            <li >
+                            <li  class="active" >
                                 <a href="component-Receiver.html">Receiver</a>
                             </li>
                         
@@ -424,12 +424,17 @@
 
                 
                 <div class="docs-section">
-<h2 id="ActionSheet">
-    ActionSheet
+<h2 id="Receiver">
+    Receiver
     <small></small>
     <span class="yo-badge yo-badge-danger">0.17.0</span>
 </h2>
-<div class="api-content"><p>上拉按钮组</p>
+<div class="api-content"><p>掉落元素接受组件</p>
+<p>用来包裹掉落元素接受元素，如果该元素是绝对定位，定位的样式应该写在 <code>Receiver</code> 或父元素上，而不应该写在子元素上。<code>Receiver</code> 主要提供以下功能：</p>
+<ol>
+<li>提供元素中心坐标，以作为掉落动画的终点；</li>
+<li>提供掉落组件到达时的响应动画，需要在 <code>Dropper</code> 元素的 <code>onEnd</code> 回调中手动调用 <code>Receiver</code> 元素的 <code>animate</code> 方法。</li>
+</ol>
 </div>
 <!-- 使用说明begin -->
 
@@ -439,194 +444,63 @@
 <div class="con-head">属性</div>
 
 <blockquote class="api">
-    <h3 id="visible" class="subject">
-    <strong>visible</strong>
-     <span class="prop-type">{ Boolean }</span>
-    
-    <a class="hashlink" href="#visible">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>显示开关</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> false
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="btnList" class="subject">
-    <strong>btnList</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#btnList">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>按钮组</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> [{
-style: null,
-text: '确定',
-textStyle: null,
-onPress: NOOP,
-}]
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="btnStyle" class="subject">
-    <strong>btnStyle</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#btnStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>统一按钮样式</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="btnTextStyle" class="subject">
-    <strong>btnTextStyle</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#btnTextStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>统一按钮文字样式</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="cancelBtnStyle" class="subject">
-    <strong>cancelBtnStyle</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#cancelBtnStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>取消按钮样式</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="cancelBtnText" class="subject">
-    <strong>cancelBtnText</strong>
-     <span class="prop-type">{ String }</span>
-    
-    <a class="hashlink" href="#cancelBtnText">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>取消按钮文字</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> '取消'
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="cancelBtnTextStyle" class="subject">
-    <strong>cancelBtnTextStyle</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#cancelBtnTextStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>取消按钮文字样式</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="overlayStyle" class="subject">
-    <strong>overlayStyle</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#overlayStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>遮罩层样式</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="onClose" class="subject">
-    <strong>onClose</strong>
+    <h3 id="getCenterPosition" class="subject">
+    <strong>getCenterPosition</strong>
      <span class="prop-type">{ Function }</span>
     
-    <a class="hashlink" href="#onClose">#</a>
+    <a class="hashlink" href="#getCenterPosition">#</a>
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>关闭回调（动画结束时）</p>
+    <div><p>获取中心位置回调</p>
 </div>
     
 </div>
 
 <p class="api-content">
     <small class="text-muted">默认值:</small> NOOP
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="getEl" class="subject">
+    <strong>getEl</strong>
+     <span class="prop-type">{ Function }</span>
+    
+    <a class="hashlink" href="#getEl">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>获取元素回调</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> NOOP
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="scale" class="subject">
+    <strong>scale</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#scale">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>缩放值</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 1.1
 </p>
 
 
@@ -641,13 +515,13 @@ onPress: NOOP,
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>动画时长</p>
+    <div><p>动画时间</p>
 </div>
     
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> 200
+    <small class="text-muted">默认值:</small> 1.1
 </p>
 
 
@@ -675,21 +549,42 @@ onPress: NOOP,
 
 
 <blockquote class="api">
-    <h3 id="underlayColor" class="subject">
-    <strong>underlayColor</strong>
-     <span class="prop-type">{ String }</span>
+    <h3 id="children" class="subject">
+    <strong>children</strong>
+     <span class="prop-type">{ Element }</span>
     
-    <a class="hashlink" href="#underlayColor">#</a>
+    <a class="hashlink" href="#children">#</a>
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>按钮点击透明度变化</p>
+    <div><p>子元素</p>
 </div>
     
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> '#eee'
+    <small class="text-muted">默认值:</small> null
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="onLayout" class="subject">
+    <strong>onLayout</strong>
+     <span class="prop-type">{ Function }</span>
+    
+    <a class="hashlink" href="#onLayout">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>布局回调</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> NOOP
 </p>
 
 
@@ -699,10 +594,25 @@ onPress: NOOP,
 
 
 <div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import ActionSheet from 'rnx-ui/ActionSheet';
-function Example(props) {
+<pre class="ydoc-example" ><code>import {Receiver,} from 'rnx-ui/Drop';
+import Badge from 'rnx-ui/Drop';
+function CartReceiver(props) {
 return (
-  &lt;ActionSheet /&gt;
+   &lt;Receiver
+     ref={props.getEl}
+     getCenterPosition={props.getCenterPosition}
+     style={styles.all}
+   &gt;
+    &lt;Badge
+       text={props.count}
+       textContainerStyle={styles.textContainer}
+     &gt;
+      &lt;Cart
+         style={styles.cart}
+         iconStyle={styles.icon}
+       /&gt;
+     &lt;/Badge&gt;
+   &lt;/Receiver&gt;
  );
  }</code></pre>
 

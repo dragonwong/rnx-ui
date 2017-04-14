@@ -3,7 +3,7 @@
  * @version 0.17.0
  * @description 导航栏
  *
- * ![NavBar](https://github.com/wangkexinW/htmldoc/blob/master/NavBar/demo.png?raw=true)
+ * ![NavBar](https://github.com/wangkexinW/rnx-ui/blob/doc/NavBar/NavBar.png?raw=true)
  */
 import React, { Component, PropTypes } from 'react';
 import {
@@ -122,14 +122,14 @@ NavBar.propTypes = {
   style: View.propTypes.style,
   /**
    * @property statusBarHeight
-   * @type NUmber
+   * @type Number
    * @default STATUS_BAR_HEIGHT
    * @description statusBar 高度
    */
   statusBarHeight: PropTypes.number,
   /**
    * @property headerHeight
-   * @type NUmber
+   * @type Number
    * @default HEADER_HEIGHT
    * @description header 高度
    */
@@ -157,6 +157,7 @@ NavBar.propTypes = {
   titleGap: PropTypes.number,
   /**
    * @property leftBtn
+   * @type Object
    * @default null
    * @description 左侧按钮
    */
@@ -184,6 +185,7 @@ NavBar.propTypes = {
   leftBtnDisabled: PropTypes.bool,
   /**
    * @property rightBtn
+   * @type Object
    * @default null
    * @description 右侧按钮
    */

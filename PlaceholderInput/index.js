@@ -6,10 +6,10 @@
  * @example
  *  import PlaceholderInput from 'rnx-ui/PlaceholderInput';
  *  function Example(props) {
- * return (
- *  <PlaceholderInput />
- * );
- *}
+ *   return (
+ *    <PlaceholderInput />
+ *   );
+ *  }
  */
 import React, {
   PropTypes,
@@ -161,7 +161,6 @@ PlaceholderInput.propTypes = {
    * @description 占位元素样式 （placeholder 为字符串时才生效）
    */
   placeholderStyle: Text.propTypes.style,
-
   /**
    * @property name
    * @type String

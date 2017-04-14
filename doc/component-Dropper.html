@@ -258,9 +258,9 @@
                         
                         
                         
-                        <ul class="nav docs-sidenav-extend"  style="display:block;"    style="display:block;" >
+                        <ul class="nav docs-sidenav-extend"    style="display:block;" >
                         
-                            <li  class="active" >
+                            <li >
                                 <a href="component-ActionSheet.html">ActionSheet</a>
                             </li>
                         
@@ -305,7 +305,7 @@
                         
                         
                         
-                            <li >
+                            <li  class="active" >
                                 <a href="component-Dropper.html">Dropper</a>
                             </li>
                         
@@ -424,12 +424,18 @@
 
                 
                 <div class="docs-section">
-<h2 id="ActionSheet">
-    ActionSheet
+<h2 id="Dropper">
+    Dropper
     <small></small>
     <span class="yo-badge yo-badge-danger">0.17.0</span>
 </h2>
-<div class="api-content"><p>上拉按钮组</p>
+<div class="api-content"><p>掉落组件
+用来包裹掉落元素，提供抛物线运动的动画。</p>
+<p>⚠️ 注意</p>
+<ol>
+<li>必须提供起点和终点坐标，起点和终点坐标可以通过 <code>Emitter</code> 和 <code>Receiver</code> 非常方便地获取到。</li>
+<li>强烈建议提供掉落元素的宽高，这样，<code>Dropper</code> 会将自身的中心置于起点，否则置于起点的将是 <code>Dropper</code> 的左上角。</li>
+</ol>
 </div>
 <!-- 使用说明begin -->
 
@@ -439,194 +445,84 @@
 <div class="con-head">属性</div>
 
 <blockquote class="api">
-    <h3 id="visible" class="subject">
-    <strong>visible</strong>
-     <span class="prop-type">{ Boolean }</span>
-    
-    <a class="hashlink" href="#visible">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>显示开关</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> false
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="btnList" class="subject">
-    <strong>btnList</strong>
+    <h3 id="startPosition" class="subject">
+    <strong>startPosition</strong>
      <span class="prop-type">{ Object }</span>
     
-    <a class="hashlink" href="#btnList">#</a>
+    <a class="hashlink" href="#startPosition">#</a>
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>按钮组</p>
+    <div><p>起点位置</p>
 </div>
     
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> [{
-style: null,
-text: '确定',
-textStyle: null,
-onPress: NOOP,
-}]
+    <small class="text-muted">默认值:</small> {0,0}
 </p>
 
 
 
 
 <blockquote class="api">
-    <h3 id="btnStyle" class="subject">
-    <strong>btnStyle</strong>
+    <h3 id="endPosition" class="subject">
+    <strong>endPosition</strong>
      <span class="prop-type">{ Object }</span>
     
-    <a class="hashlink" href="#btnStyle">#</a>
+    <a class="hashlink" href="#endPosition">#</a>
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>统一按钮样式</p>
+    <div><p>终点位置</p>
 </div>
     
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> null
+    <small class="text-muted">默认值:</small> {0,0}
 </p>
 
 
 
 
 <blockquote class="api">
-    <h3 id="btnTextStyle" class="subject">
-    <strong>btnTextStyle</strong>
-     <span class="prop-type">{ Object }</span>
+    <h3 id="width" class="subject">
+    <strong>width</strong>
+     <span class="prop-type">{ Number }</span>
     
-    <a class="hashlink" href="#btnTextStyle">#</a>
+    <a class="hashlink" href="#width">#</a>
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>统一按钮文字样式</p>
+    <div><p>掉落元素宽度</p>
 </div>
     
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> null
+    <small class="text-muted">默认值:</small> 0
 </p>
 
 
 
 
 <blockquote class="api">
-    <h3 id="cancelBtnStyle" class="subject">
-    <strong>cancelBtnStyle</strong>
-     <span class="prop-type">{ Object }</span>
+    <h3 id="height" class="subject">
+    <strong>height</strong>
+     <span class="prop-type">{ Number }</span>
     
-    <a class="hashlink" href="#cancelBtnStyle">#</a>
+    <a class="hashlink" href="#height">#</a>
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>取消按钮样式</p>
+    <div><p>掉落元素高度</p>
 </div>
     
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="cancelBtnText" class="subject">
-    <strong>cancelBtnText</strong>
-     <span class="prop-type">{ String }</span>
-    
-    <a class="hashlink" href="#cancelBtnText">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>取消按钮文字</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> '取消'
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="cancelBtnTextStyle" class="subject">
-    <strong>cancelBtnTextStyle</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#cancelBtnTextStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>取消按钮文字样式</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="overlayStyle" class="subject">
-    <strong>overlayStyle</strong>
-     <span class="prop-type">{ Object }</span>
-    
-    <a class="hashlink" href="#overlayStyle">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>遮罩层样式</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> null
-</p>
-
-
-
-
-<blockquote class="api">
-    <h3 id="onClose" class="subject">
-    <strong>onClose</strong>
-     <span class="prop-type">{ Function }</span>
-    
-    <a class="hashlink" href="#onClose">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>关闭回调（动画结束时）</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> NOOP
+    <small class="text-muted">默认值:</small> 0
 </p>
 
 
@@ -641,13 +537,202 @@ onPress: NOOP,
     </h3>
 </blockquote>
 <div class="api-content">
-    <div><p>动画时长</p>
+    <div><p>动画时间</p>
 </div>
     
 </div>
 
 <p class="api-content">
-    <small class="text-muted">默认值:</small> 200
+    <small class="text-muted">默认值:</small> 1000
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="jumpHeight" class="subject">
+    <strong>jumpHeight</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#jumpHeight">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>弹跳的高度</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 60
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="scale" class="subject">
+    <strong>scale</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#scale">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>缩放值</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 1
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="rotate" class="subject">
+    <strong>rotate</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#rotate">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>旋转角度</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 360
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="showDuration" class="subject">
+    <strong>showDuration</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#showDuration">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>动画刚开始由透明变化至不透明的时间</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 100
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="onEnd" class="subject">
+    <strong>onEnd</strong>
+     <span class="prop-type">{ Function }</span>
+    
+    <a class="hashlink" href="#onEnd">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>动画结束回调</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> NOOP
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="endAnimation" class="subject">
+    <strong>endAnimation</strong>
+     <span class="prop-type">{ Boolean }</span>
+    
+    <a class="hashlink" href="#endAnimation">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>是否需要收尾动画</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> true
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="endJumpHeight" class="subject">
+    <strong>endJumpHeight</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#endJumpHeight">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>收尾弹跳的高度</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 40
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="endAnimationDuration" class="subject">
+    <strong>endAnimationDuration</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#endAnimationDuration">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>收尾动画时间</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 400
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="children" class="subject">
+    <strong>children</strong>
+     <span class="prop-type">{ Element }</span>
+    
+    <a class="hashlink" href="#children">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>子元素</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> null
 </p>
 
 
@@ -674,35 +759,34 @@ onPress: NOOP,
 
 
 
-<blockquote class="api">
-    <h3 id="underlayColor" class="subject">
-    <strong>underlayColor</strong>
-     <span class="prop-type">{ String }</span>
-    
-    <a class="hashlink" href="#underlayColor">#</a>
-    </h3>
-</blockquote>
-<div class="api-content">
-    <div><p>按钮点击透明度变化</p>
-</div>
-    
-</div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small> '#eee'
-</p>
-
-
-
-
 
 
 
 <div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import ActionSheet from 'rnx-ui/ActionSheet';
-function Example(props) {
+<pre class="ydoc-example" ><code>import { Dropper,} from 'rnx-ui/Drop';
+function DropperImg(props) {
 return (
-  &lt;ActionSheet /&gt;
+   &lt;Dropper
+    style={[styles.dropper, {
+     overflow: 'hidden',
+      backgroundColor: 'pink',
+     }]}
+     startPosition={props.startPosition}
+     endPosition={props.endPosition}
+     width={50}
+     height={50}
+     onEnd={props.onEnd}
+   &gt;
+    &lt;Image
+       source={{
+        uri: 'http://tva1.sinaimg.cn/crop.0.0.217.217.180/4c8b519djw8fa45br0vpxj2062062q33.jpg',
+       }}
+       style={{
+        width: 50,
+        height: 50,
+       }}
+     /&gt;
+   &lt;/Dropper&gt;
  );
  }</code></pre>
 

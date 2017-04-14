@@ -1,10 +1,10 @@
 
 /**
  * @component ImgHolder
- * @version 0.7.3
+ * @version 0.17.0
  * @description 带占位的图片组件
  *
- * ![ImgHolder](https://github.com/wangkexinW/htmldoc/blob/master/ImgHolder/demo.gif?raw=true)
+ * ![ImgHolder](https://github.com/wangkexinW/rnx-ui/blob/doc/ImgHolder/ImgHolder.gif?raw=true)
  */
 import React, {
   PropTypes,

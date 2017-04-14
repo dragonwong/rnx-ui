@@ -1,8 +1,10 @@
 /**
  * @component Dialog
- * @version 0.16.0
+ * @version 0.17.0
  * @description 警告弹框
+ *
  * ![Dialog](http://wx3.sinaimg.cn/mw690/4c8b519dly1fdulkkgmsog20hs0wsn81.gif)
+ *
  * @example
  * import Dialog from 'rnx-ui/Dialog';
  * function Example(props) {

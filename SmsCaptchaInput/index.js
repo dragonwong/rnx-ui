@@ -2,21 +2,25 @@
  * @component SmsCaptchaInput
  * @version 0.17.0
  * @description 短信验证码输入框
- * 短信验证码输入框组件有三种状态：
- * 0：初始状态
- * 1：发送短信中状态
- * 2：倒计时状态
- * 3：倒计时结束状态
+ *  短信验证码输入框组件有三种状态：
  *
- * 点击按钮会使组件由 `0：初始状态` 进入 `1：发送短信中状态`，
- * 此时需要根据接口状况进行判断：
- * 1、如果发送短信成功：手动调起组件的 `start` 方法，进入 `2：倒计时状态`，
- * 在倒计时结束时组件会自动进入 `3：倒计时结束状态`；
- * 2、如果发送短信失败：手动调起组件的 `stop` 方法，进入 `3：倒计时结束状态`；
- * > rnx-ui 表单校验工具
- * [Validator](https://github.com/dragonwong/rnx-ui/tree/master/util/Validator) 现已支持该组件。
+ *  0：初始状态
  *
- * ![SmsCaptchaInput](https://github.com/wangkexinW/htmldoc/blob/master/SmsCaptchaInput/demo.png?raw=true)
+ *  1：发送短信中状态
+ *
+ *  2：倒计时状态
+ *
+ *  3：倒计时结束状态
+ *
+ *  点击按钮会使组件由 `0：初始状态` 进入 `1：发送短信中状态`，
+ *  此时需要根据接口状况进行判断：
+ *  1、如果发送短信成功：手动调起组件的 `start` 方法，进入 `2：倒计时状态`，
+ *  在倒计时结束时组件会自动进入 `3：倒计时结束状态`；
+ *  2、如果发送短信失败：手动调起组件的 `stop` 方法，进入 `3：倒计时结束状态`；
+ *
+ *  >rnx-ui 表单校验工具[Validator](https://github.com/dragonwong/rnx-ui/tree/master/util/Validator) 现已支持该组件。
+ *
+ * ![SmsCaptchaInput](https://github.com/wangkexinW/rnx-ui/blob/doc/SmsCaptchaInput/SmsCaptchaInput.png?raw=true)
  */
 
 import React, { Component, PropTypes } from 'react';
@@ -89,11 +93,15 @@ class SmsCaptchaInput extends Component {
   }
 
   onPress() {
-    // 检测是否处于点击发送短信状态
+    /**
+     * @description 检测是否处于点击发送短信状态
+     */
     if (this.state.isRunning) {
       return;
     }
-    // 运行点击按钮回调
+    /**
+     * @description 运行点击按钮回调
+     */
     if (this.props.onPressBtn(this.start, this.stop) === false) {
       return;
     }
@@ -109,7 +117,9 @@ class SmsCaptchaInput extends Component {
     this.input = el;
   }
 
-  // 开始倒计时
+    /**
+     * @description 开始倒计时
+     */
   start() {
     this.time = this.props.intervalTime;
     this.interval = setInterval(this.timer, 1000);
@@ -118,7 +128,9 @@ class SmsCaptchaInput extends Component {
       this.input.focus();
     }
   }
-  // 结束倒计时
+   /**
+     * @description 结束倒计时
+     */
   stop() {
     clearInterval(this.interval);
     this.setState({
@@ -128,7 +140,9 @@ class SmsCaptchaInput extends Component {
     this.props.onStop();
   }
 
-  // 倒计时函数
+    /**
+     * @description 倒计时函数
+     */
   timer() {
     if (this.time > 0) {
       this.setState({
@@ -244,9 +258,9 @@ SmsCaptchaInput.propTypes = {
    */
   btnTextSending: PropTypes.string,
   /**
-   * @property btnTextSending
+   * @property btnTextTiming
    * @type String
-   * @default  '{time}秒后可重发'
+   * @default'{time}秒后可重发'
    * @description 按钮文字：倒计时中，`{time}` 将会被替换为倒计时数字
    */
   btnTextTiming: PropTypes.string,

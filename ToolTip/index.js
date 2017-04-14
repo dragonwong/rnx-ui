@@ -2,8 +2,10 @@
  * @component ToolTip
  * @version 0.17.0
  * @description 提示框
- * ![ToolTip](http://wx2.sinaimg.cn/mw690/4c8b519dly1fdlfmi544kg20hs0wswjd.gif）
- *  Other Points
+ *
+ * ![AddAndSubtract](http://wx2.sinaimg.cn/mw690/4c8b519dly1fdlfmi544kg20hs0wswjd.gif)
+ *
+ *  ## Other Points
  * 内部封装了 Overlay 组件，请参考 [Overlay](https://github.com/dragonwong/rnx-ui/tree/master/Overlay)
  */
 import React, {

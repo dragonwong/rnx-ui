@@ -2,6 +2,7 @@
  * @component Confirm
  * @version 0.17.0
  * @description 确认弹框组件
+ *
  * ![Confirm](http://wx3.sinaimg.cn/mw690/4c8b519dly1fdulcvgrcvg20hs0ws7h6.gif)
  *
  * ## Other Points

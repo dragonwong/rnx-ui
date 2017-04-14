@@ -1,6 +1,6 @@
 /**
  * @component AddAndSubtract
- * @version 0.11.1
+ * @version 0.17.0
  * @description 加减法动画组件
  *
  * ![AddAndSubtract](http://wx3.sinaimg.cn/mw690/4c8b519dly1fcaq7v2pnvg20ho0wgh0z.gif)

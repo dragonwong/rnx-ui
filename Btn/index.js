@@ -3,7 +3,7 @@
  * @version 0.17.0
  * @description 按钮
  *
- * ![Btn](https://github.com/wangkexinW/htmldoc/blob/master/Btn/demo.png?raw=true)
+ * ![Btn](https://github.com/wangkexinW/rnx-ui/blob/doc/Btn/btn.png?raw=true)
  * @example
  * import Btn from 'rnx-ui/Btn';
  * function Example(props) {

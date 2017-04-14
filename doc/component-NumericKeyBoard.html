@@ -21,7 +21,7 @@
       <header class="ydoc-header">
         <div class="ydoc-header-area">
             
-            <a href="http://ued.qunar.com/ymfe/" class="navbar-brand">YMFE</a>
+            <a href="" class="navbar-brand">RNX-UI</a>
             
             <button class="ydocIcon navbar-toggle">&#xf020;</button>
             <nav class="ydoc-nav">
@@ -43,12 +43,6 @@
                     <li class="">
                         
                         <a href="CHANGELOG.html">版本</a>
-                        
-                    </li>
-                    
-                    <li class="">
-                        
-                        <a href="https://github.com/doyoe/Yo" target="_blank">Github</a>
                         
                     </li>
                     
@@ -143,6 +137,15 @@
                         
                             <li >
                                 <a href="component-ImgRollView.html">ImgRollView</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-ImgPicker.html">ImgPicker</a>
                             </li>
                         
                         
@@ -303,6 +306,33 @@
                         
                         
                             <li >
+                                <a href="component-Dropper.html">Dropper</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-Emitter.html">Emitter</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-Receiver.html">Receiver</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
                                 <a href="component-HeaderedSheet.html">HeaderedSheet</a>
                             </li>
                         
@@ -393,7 +423,103 @@
               <div class="content-right markdown-body" role="main">
 
                 
-                {Template Error}
+                <div class="docs-section">
+<h2 id="NavbNumericKeyboardar">
+    NavbNumericKeyboardar
+    <small></small>
+    <span class="yo-badge yo-badge-danger">0.17.0</span>
+</h2>
+<div class="api-content"><p>虚拟数字键盘
+很多情况下系统的数字键盘不能满足我们的要求，比如不同平台数字键盘表现不一致，比如有的数字键盘存在小数点，比如需要配合虚拟输入框而系统的键盘又不易控制...</p>
+<p><img src="http://wx2.sinaimg.cn/mw690/4c8b519dly1fbztgpbw6gg20ho0wgx6p.gif" alt="NumericKeyboard"></p>
+</div>
+<!-- 使用说明begin -->
+
+<!-- 使用说明end -->
+<div class="con-list-item">
+
+<div class="con-head">属性</div>
+
+<blockquote class="api">
+    <h3 id="style" class="subject">
+    <strong>style</strong>
+     <span class="prop-type">{ Object }</span>
+    
+    <a class="hashlink" href="#style">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>自定义样式</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> Null
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="onPress" class="subject">
+    <strong>onPress</strong>
+     <span class="prop-type">{ Function }</span>
+    
+    <a class="hashlink" href="#onPress">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>按键回调</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> NOOP
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="deleteKeyContent" class="subject">
+    <strong>deleteKeyContent</strong>
+     <span class="prop-type">{ Element }</span>
+    
+    <a class="hashlink" href="#deleteKeyContent">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>删除键类型</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small>  <Image source={delImgSource} />
+</p>
+
+
+
+
+
+
+
+<div class="con-head">示例</div>
+<pre class="ydoc-example" ><code>import NumericKeyboard from 'rnx-ui/NumericKeyboard';
+function Example(props) {
+  return (
+     &lt;NumericKeyboard
+       onPress={this.onInput}
+     /&gt;
+   );
+ }</code></pre>
+
+
+</div>
+</div>
+
               </div>
           </div>
           

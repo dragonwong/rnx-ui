@@ -2,6 +2,12 @@
  * @component RefreshView
  * @version 0.17.0
  * @description 滚动框
+ * 带惯性、下拉刷新功能。官版的 ScrollView 下拉刷新的功能几乎没有可定制空间，而 RefreshView 可以对 RefreshControl 进行完全的自定义，
+ * 包括控件的本身，下拉状态的实时响应等，具有极大的可定制空间。
+ *
+ * 配套组件：[RefreshControl](./RefreshControl/README.md)
+ *
+ * ![RefreshView](https://github.com/wangkexinW/rnx-ui/blob/doc/RefreshView/RefreshView.gif?raw=true)
  * @example
  * import PlaceholderText from 'rnx-ui/PlaceholderText';
  * function Example(props) {
@@ -9,8 +15,8 @@
  *   <PlaceholderText
  *     placeholder={this.placeholder}
  *   />
- * );
- *}
+ *  );
+ * }
  */
 import React, {
   Component,
@@ -52,13 +58,7 @@ class RefreshView extends Component {
 
     this.refreshControlHeight = 0;
     this.RCOnReadyToRefreshLock = false;
-    /**
-     * 刷新控件状态
-     * 0: 「下拉刷新」初始状态，可下拉
-     * 1: 「松开刷新」下拉距离到达刷新点
-     * 2: 「刷新中...」正在刷新
-     * @type {Number}
-     */
+
     this.refreshControlStatus = 0;
     this.lastRefreshControlStatus = 0;
 
@@ -406,7 +406,7 @@ class RefreshView extends Component {
     }
 
     /**
-     * 计算滚动条高度
+     * @description 计算滚动条高度
      */
     if (y > 0) {
       contentLen += y;
@@ -423,7 +423,7 @@ class RefreshView extends Component {
     }
 
     /**
-     * 计算滚动条位置
+     * @description 计算滚动条位置
      */
     if (p >= 1) {
       top = 0;

@@ -4,7 +4,7 @@
  * @version 0.17.0
  * @description 菊花加载中组件
  *
- * ![ImgHolder](https://github.com/wangkexinW/htmldoc/blob/master/Loading/demo.png?raw=true)
+ * ![Loading](https://github.com/wangkexinW/rnx-ui/blob/doc/Loading/Loading.png?raw=true)
  */
 import React, {
   PropTypes,

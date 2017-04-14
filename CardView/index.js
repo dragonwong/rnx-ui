@@ -2,11 +2,14 @@
  * @component CardView
  * @version 0.17.0
  * @description 卡片视图
- *  以卡片样式浏览，并可以设置激活卡片样式。
+ * 以卡片样式浏览，并可以设置激活卡片样式。
+ *
  * 通过 `getEl` 属性获取 CardView 实例，调用 `scrollToCard` 方法可以
  *
  * ⚠️ 注意
+ *
  * CardView 会为卡片添加 `isActiveRnxUiCardView` 属性，激活卡片值为 `true`，其他卡片是 `false`。
+ *
  * ![CardView](http://wx3.sinaimg.cn/mw690/4c8b519dly1fdgvohgt53g20hs0wsaip.gif)
  *
  * @example

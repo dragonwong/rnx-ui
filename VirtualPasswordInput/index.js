@@ -1,19 +1,20 @@
-
 /**
  * @component VirtualPasswordInput
  * @version 0.17.0
  * @description 虚拟密码输入框
+ *
  * ![VirtualPasswordInput](http://wx1.sinaimg.cn/mw690/4c8b519dly1fbztgvfczlg20ho0wghdv.gif)
+ *
  * @example
  * import VirtualPasswordInput from 'rnx-ui/VirtualPasswordInput';
- *function Example(props) {
+ * function Example(props) {
  * return (
  *   <VirtualPasswordInput
  *     onPress={this.onPressPswdInput}
  *     value={this.state.pswd}
  *   />
- * );
- *}
+ *  );
+ * }
  */
 
 import React, { Component, PropTypes } from 'react';

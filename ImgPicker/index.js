@@ -2,10 +2,9 @@
  * @component ImgPicker
  * @version 0.17.0
  * @description 图片选择组件
- * ![](demo.gif)
  * @example
  * import ImgPicker from 'rnx-ui/ImgPicker';
- *function Example(props) {
+ * function Example(props) {
  *  return (
  *   <ImgPicker
  *     images={this.state.images}
@@ -22,7 +21,7 @@
  *     }}
  *     onAdderPress={this.openCameraActionSheet}
  *   />
- * );
+ *  );
  * }
  */
 import React, {

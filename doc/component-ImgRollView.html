@@ -21,7 +21,7 @@
       <header class="ydoc-header">
         <div class="ydoc-header-area">
             
-            <a href="http://ued.qunar.com/ymfe/" class="navbar-brand">YMFE</a>
+            <a href="" class="navbar-brand">RNX-UI</a>
             
             <button class="ydocIcon navbar-toggle">&#xf020;</button>
             <nav class="ydoc-nav">
@@ -43,12 +43,6 @@
                     <li class="">
                         
                         <a href="CHANGELOG.html">版本</a>
-                        
-                    </li>
-                    
-                    <li class="">
-                        
-                        <a href="https://github.com/doyoe/Yo" target="_blank">Github</a>
                         
                     </li>
                     
@@ -143,6 +137,15 @@
                         
                             <li  class="active" >
                                 <a href="component-ImgRollView.html">ImgRollView</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-ImgPicker.html">ImgPicker</a>
                             </li>
                         
                         
@@ -303,6 +306,33 @@
                         
                         
                             <li >
+                                <a href="component-Dropper.html">Dropper</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-Emitter.html">Emitter</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-Receiver.html">Receiver</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
                                 <a href="component-HeaderedSheet.html">HeaderedSheet</a>
                             </li>
                         
@@ -393,7 +423,321 @@
               <div class="content-right markdown-body" role="main">
 
                 
-                {Template Error}
+                <div class="docs-section">
+<h2 id="ImgRollView">
+    ImgRollView
+    <small></small>
+    <span class="yo-badge yo-badge-danger">0.17.0</span>
+</h2>
+<div class="api-content"><p>图片多选组件</p>
+<p>⚠️ 注意
+CameraRoll 提供了访问本地相册的功能。在iOS上使用这个模块之前，你需要先链接 RCTCameraRoll 库，具体做法请参考<a href="https://reactnative.cn/docs/0.42/linking-libraries-ios.html">链接原生库文档</a>。另外，从 iOS10 开始，访问相册需要用户授权。你需要在 <code>Info.plist</code> 中添加一条名为 <code>NSCameraUsageDescription</code> 的键，然后在其值中填写向用户请求权限的具体描述。编辑完成后这个键在 Xcode 中实际会显示为 <code>Privacy - Camera Usage Description</code>。</p>
+</div>
+<!-- 使用说明begin -->
+
+<!-- 使用说明end -->
+<div class="con-list-item">
+
+<div class="con-head">属性</div>
+
+<blockquote class="api">
+    <h3 id="maxSelected" class="subject">
+    <strong>maxSelected</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#maxSelected">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>最大照片选择条数</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 10
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="gap" class="subject">
+    <strong>gap</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#gap">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>图片间像素间隔</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 8
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="imagesPerRow" class="subject">
+    <strong>imagesPerRow</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#imagesPerRow">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>每行显示的图片数量</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 4
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="assetType" class="subject">
+    <strong>assetType</strong>
+     <span class="prop-type">{ String }</span>
+    
+    <a class="hashlink" href="#assetType">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>静态资源类型</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 'Photos'
+</p>
+
+
+<p class="api-content">
+    <small class="text-muted">方法参数:</small>
+</p>
+<div class="docs-table api-content">
+    <table class="yo-table yo-table-border">
+        <colgroup>
+            <col class="c1">
+            <col class="c2">
+            <col class="c3">
+            <!-- <col class="c4"> -->
+        </colgroup>
+        <thead>
+            <tr class="active">
+                <th>参数名</th>
+                <th>类型</th>
+                <th>描述</th>
+                <!-- <th>必选</th> -->
+                <th>版本</th>
+            </tr>
+        </thead>
+        
+        <tr>
+            <td>'Videos'</td>
+            <td>String</td>
+            <td></td>
+            <!-- <td>
+                
+                <i class="yo-ico glyphicon glyphicon-ok text-success"></i> 
+            </td> -->
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>'All'</td>
+            <td>String</td>
+            <td></td>
+            <!-- <td>
+                
+                <i class="yo-ico glyphicon glyphicon-ok text-success"></i> 
+            </td> -->
+            <td></td>
+        </tr>
+        
+    </table>
+</div>
+
+
+
+<blockquote class="api">
+    <h3 id="onSelect" class="subject">
+    <strong>onSelect</strong>
+     <span class="prop-type">{ Function }</span>
+    
+    <a class="hashlink" href="#onSelect">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p>用户选择图片时触发的回调，返回参数为 node/uri/selected/uriSelected</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> () => {}
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="iconSelected" class="subject">
+    <strong>iconSelected</strong>
+     <span class="prop-type">{ Element }</span>
+    
+    <a class="hashlink" href="#iconSelected">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 选中图标</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small>  <Text style={style.tickInner}>v</Text>
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="iconUnSelected" class="subject">
+    <strong>iconUnSelected</strong>
+     <span class="prop-type">{ Element }</span>
+    
+    <a class="hashlink" href="#iconUnSelected">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 未选中图标</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small>  <Text style={style.tickInner}>x</Text>
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="uriList" class="subject">
+    <strong>uriList</strong>
+     <span class="prop-type">{ Array }</span>
+    
+    <a class="hashlink" href="#uriList">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 初始选中 uri</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small>  []
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="style" class="subject">
+    <strong>style</strong>
+     <span class="prop-type">{ Object }</span>
+    
+    <a class="hashlink" href="#style">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 外层容器样式</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small>  null
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="iconSelectedStyle" class="subject">
+    <strong>iconSelectedStyle</strong>
+     <span class="prop-type">{ Object }</span>
+    
+    <a class="hashlink" href="#iconSelectedStyle">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 选中图标外框样式</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small>  null
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="iconUnSelectedStyle" class="subject">
+    <strong>iconUnSelectedStyle</strong>
+     <span class="prop-type">{ Object }</span>
+    
+    <a class="hashlink" href="#iconUnSelectedStyle">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 未选中图标外框样式</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small>  null
+</p>
+
+
+
+
+
+
+
+<div class="con-head">示例</div>
+<pre class="ydoc-example" ><code>import ImgRollView from 'rnx-ui/ImgPicker';
+function Example(props) {
+ return (
+    &lt;ImgRollView
+      onSelect={this.onSelect}
+      style={style.imgRollViewStyle}
+      maxSelected={5}
+   iconSelected={&lt;Icon name="fa-check" style={style.iconStyle} /&gt;}
+   iconUnSelected={&lt;Icon name="fa-check" style={style.iconStyle} /&gt;}
+     /&gt;
+   );
+   }</code></pre>
+
+
+</div>
+</div>
+
               </div>
           </div>
           

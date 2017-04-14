@@ -21,7 +21,7 @@
       <header class="ydoc-header">
         <div class="ydoc-header-area">
             
-            <a href="http://ued.qunar.com/ymfe/" class="navbar-brand">YMFE</a>
+            <a href="" class="navbar-brand">RNX-UI</a>
             
             <button class="ydocIcon navbar-toggle">&#xf020;</button>
             <nav class="ydoc-nav">
@@ -43,12 +43,6 @@
                     <li class="">
                         
                         <a href="CHANGELOG.html">版本</a>
-                        
-                    </li>
-                    
-                    <li class="">
-                        
-                        <a href="https://github.com/doyoe/Yo" target="_blank">Github</a>
                         
                     </li>
                     
@@ -143,6 +137,15 @@
                         
                             <li >
                                 <a href="component-ImgRollView.html">ImgRollView</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-ImgPicker.html">ImgPicker</a>
                             </li>
                         
                         
@@ -303,6 +306,33 @@
                         
                         
                             <li >
+                                <a href="component-Dropper.html">Dropper</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-Emitter.html">Emitter</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-Receiver.html">Receiver</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
                                 <a href="component-HeaderedSheet.html">HeaderedSheet</a>
                             </li>
                         
@@ -397,9 +427,10 @@
 <h2 id="Overlay">
     Overlay
     <small>遮罩层</small>
-    
+    <span class="yo-badge yo-badge-danger">0.17.0</span>
 </h2>
-<div class="api-content"><p>遮罩层 ⚠️ 注意</p>
+<div class="api-content"><p>遮罩层</p>
+<p>⚠️ 注意</p>
 <ol>
 <li>点击 Overlay 内部元素时也会触发 Overlay 的 <code>onPress</code> 回调。
 如果需要避免该情况，请在内部元素外包裹 <code>Touchable*</code> 元素，用来捕获点击事件并阻止其冒泡。</li>
@@ -479,11 +510,11 @@
 
 
 <blockquote class="api">
-    <h3 id="chilren" class="subject">
-    <strong>chilren</strong>
-     <span class="prop-type">{ Object }</span>
+    <h3 id="children" class="subject">
+    <strong>children</strong>
+     <span class="prop-type">{ Element }</span>
     
-    <a class="hashlink" href="#chilren">#</a>
+    <a class="hashlink" href="#children">#</a>
     </h3>
 </blockquote>
 <div class="api-content">

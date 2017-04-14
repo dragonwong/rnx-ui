@@ -21,7 +21,7 @@
       <header class="ydoc-header">
         <div class="ydoc-header-area">
             
-            <a href="http://ued.qunar.com/ymfe/" class="navbar-brand">YMFE</a>
+            <a href="" class="navbar-brand">RNX-UI</a>
             
             <button class="ydocIcon navbar-toggle">&#xf020;</button>
             <nav class="ydoc-nav">
@@ -43,12 +43,6 @@
                     <li class="">
                         
                         <a href="CHANGELOG.html">版本</a>
-                        
-                    </li>
-                    
-                    <li class="">
-                        
-                        <a href="https://github.com/doyoe/Yo" target="_blank">Github</a>
                         
                     </li>
                     
@@ -143,6 +137,15 @@
                         
                             <li >
                                 <a href="component-ImgRollView.html">ImgRollView</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-ImgPicker.html">ImgPicker</a>
                             </li>
                         
                         
@@ -303,6 +306,33 @@
                         
                         
                             <li >
+                                <a href="component-Dropper.html">Dropper</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-Emitter.html">Emitter</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-Receiver.html">Receiver</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
                                 <a href="component-HeaderedSheet.html">HeaderedSheet</a>
                             </li>
                         
@@ -393,7 +423,294 @@
               <div class="content-right markdown-body" role="main">
 
                 
-                {Template Error}
+                <div class="docs-section">
+<h2 id="RefreshView">
+    RefreshView
+    <small></small>
+    <span class="yo-badge yo-badge-danger">0.17.0</span>
+</h2>
+<div class="api-content"><p>滚动框
+带惯性、下拉刷新功能。官版的 ScrollView 下拉刷新的功能几乎没有可定制空间，而 RefreshView 可以对 RefreshControl 进行完全的自定义，
+包括控件的本身，下拉状态的实时响应等，具有极大的可定制空间。</p>
+<p>配套组件：<a href="./RefreshControl/README.md">RefreshControl</a></p>
+<p><img src="https://github.com/wangkexinW/rnx-ui/blob/doc/RefreshView/RefreshView.gif?raw=true" alt="RefreshView"></p>
+</div>
+<!-- 使用说明begin -->
+
+<!-- 使用说明end -->
+<div class="con-list-item">
+
+<div class="con-head">属性</div>
+
+<blockquote class="api">
+    <h3 id="onScroll" class="subject">
+    <strong>onScroll</strong>
+     <span class="prop-type">{ Function }</span>
+    
+    <a class="hashlink" href="#onScroll">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 滚动回调，参数为滚动距离</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> NOOP
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="onEndReachedThreShold" class="subject">
+    <strong>onEndReachedThreShold</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#onEndReachedThreShold">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 调用 onEndReached 之前的临界值，描述距底部的距离</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 0
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="onEndReached" class="subject">
+    <strong>onEndReached</strong>
+     <span class="prop-type">{ Function }</span>
+    
+    <a class="hashlink" href="#onEndReached">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 当滚动至距离底部 onEndReachedThreshold 的范围内，会持续触发的回调</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> NOOP
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="overA" class="subject">
+    <strong>overA</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#overA">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 超出范围时的减速度</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 0.05
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="maxOverV" class="subject">
+    <strong>maxOverV</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#maxOverV">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 超出范围时最大速度</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 3
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="dragOverA" class="subject">
+    <strong>dragOverA</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#dragOverA">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 拖拽超出范围时的减速度</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 2.5
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="renderInterval" class="subject">
+    <strong>renderInterval</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#renderInterval">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 渲染间隔时间</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 16
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="recoverTime" class="subject">
+    <strong>recoverTime</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#recoverTime">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 弹性恢复时间</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 200
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="refreshControlRecoverTime" class="subject">
+    <strong>refreshControlRecoverTime</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#refreshControlRecoverTime">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 刷新控件恢复时间</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 100
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="refreshDistance" class="subject">
+    <strong>refreshDistance</strong>
+     <span class="prop-type">{ Number }</span>
+    
+    <a class="hashlink" href="#refreshDistance">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 刷新控件恢复时间</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> 60
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="refreshControl" class="subject">
+    <strong>refreshControl</strong>
+     <span class="prop-type">{ Function }</span>
+    
+    <a class="hashlink" href="#refreshControl">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 下拉刷新控件</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> null
+</p>
+
+
+
+
+<blockquote class="api">
+    <h3 id="children" class="subject">
+    <strong>children</strong>
+     <span class="prop-type">{ Element }</span>
+    
+    <a class="hashlink" href="#children">#</a>
+    </h3>
+</blockquote>
+<div class="api-content">
+    <div><p> 子元素</p>
+</div>
+    
+</div>
+
+<p class="api-content">
+    <small class="text-muted">默认值:</small> null
+</p>
+
+
+
+
+
+
+
+<div class="con-head">示例</div>
+<pre class="ydoc-example" ><code>import PlaceholderText from 'rnx-ui/PlaceholderText';
+function Example(props) {
+return (
+   &lt;PlaceholderText
+     placeholder={this.placeholder}
+   /&gt;
+  );
+ }</code></pre>
+
+
+</div>
+</div>
+
               </div>
           </div>
           

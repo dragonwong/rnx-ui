@@ -3,7 +3,7 @@
  * @version 0.17.0
  * @description 横向点击栏
  *
- * ![TabBar](https://github.com/wangkexinW/htmldoc/blob/master/TabBar/demo.png?raw=true)
+ * ![TabBar](https://github.com/wangkexinW/rnx-ui/blob/doc/TabBar/TabBar.png?raw=true)
  */
 import React, {
   PropTypes,
@@ -76,8 +76,8 @@ TabBar.propTypes = {
   style: View.propTypes.style,
   /* eslint-disable */
   /**
-   * @property item
-   * @type Array
+   * @property items
+   * @type Object
    * @default [{}]
    * @param {String} id  tab 项 id
    * @param {Element} defaultComponent tab 项默认元素

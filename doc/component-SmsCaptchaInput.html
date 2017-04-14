@@ -21,7 +21,7 @@
       <header class="ydoc-header">
         <div class="ydoc-header-area">
             
-            <a href="http://ued.qunar.com/ymfe/" class="navbar-brand">YMFE</a>
+            <a href="" class="navbar-brand">RNX-UI</a>
             
             <button class="ydocIcon navbar-toggle">&#xf020;</button>
             <nav class="ydoc-nav">
@@ -43,12 +43,6 @@
                     <li class="">
                         
                         <a href="CHANGELOG.html">版本</a>
-                        
-                    </li>
-                    
-                    <li class="">
-                        
-                        <a href="https://github.com/doyoe/Yo" target="_blank">Github</a>
                         
                     </li>
                     
@@ -143,6 +137,15 @@
                         
                             <li >
                                 <a href="component-ImgRollView.html">ImgRollView</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-ImgPicker.html">ImgPicker</a>
                             </li>
                         
                         
@@ -303,6 +306,33 @@
                         
                         
                             <li >
+                                <a href="component-Dropper.html">Dropper</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-Emitter.html">Emitter</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
+                                <a href="component-Receiver.html">Receiver</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li >
                                 <a href="component-HeaderedSheet.html">HeaderedSheet</a>
                             </li>
                         
@@ -400,21 +430,20 @@
     <span class="yo-badge yo-badge-danger">0.17.0</span>
 </h2>
 <div class="api-content"><p>短信验证码输入框
-短信验证码输入框组件有三种状态：
-0：初始状态
-1：发送短信中状态
-2：倒计时状态
-3：倒计时结束状态</p>
+短信验证码输入框组件有三种状态：</p>
+<p>0：初始状态</p>
+<p>1：发送短信中状态</p>
+<p>2：倒计时状态</p>
+<p>3：倒计时结束状态</p>
 <p>点击按钮会使组件由 <code>0：初始状态</code> 进入 <code>1：发送短信中状态</code>，
 此时需要根据接口状况进行判断：
 1、如果发送短信成功：手动调起组件的 <code>start</code> 方法，进入 <code>2：倒计时状态</code>，
 在倒计时结束时组件会自动进入 <code>3：倒计时结束状态</code>；
 2、如果发送短信失败：手动调起组件的 <code>stop</code> 方法，进入 <code>3：倒计时结束状态</code>；</p>
 <blockquote>
-<p>rnx-ui 表单校验工具
-<a href="https://github.com/dragonwong/rnx-ui/tree/master/util/Validator">Validator</a> 现已支持该组件。</p>
+<p>rnx-ui 表单校验工具<a href="https://github.com/dragonwong/rnx-ui/tree/master/util/Validator">Validator</a> 现已支持该组件。</p>
 </blockquote>
-<p><img src="https://github.com/wangkexinW/htmldoc/blob/master/SmsCaptchaInput/demo.png?raw=true" alt="SmsCaptchaInput"></p>
+<p><img src="https://github.com/wangkexinW/rnx-ui/blob/doc/SmsCaptchaInput/SmsCaptchaInput.png?raw=true" alt="SmsCaptchaInput"></p>
 </div>
 <!-- 使用说明begin -->
 
@@ -529,11 +558,11 @@
 
 
 <blockquote class="api">
-    <h3 id="btnTextSending" class="subject">
-    <strong>btnTextSending</strong>
+    <h3 id="btnTextTiming" class="subject">
+    <strong>btnTextTiming</strong>
      <span class="prop-type">{ String }</span>
     
-    <a class="hashlink" href="#btnTextSending">#</a>
+    <a class="hashlink" href="#btnTextTiming">#</a>
     </h3>
 </blockquote>
 <div class="api-content">
@@ -541,10 +570,6 @@
 </div>
     
 </div>
-
-<p class="api-content">
-    <small class="text-muted">默认值:</small>  '{time}秒后可重发'
-</p>
 
 
 
