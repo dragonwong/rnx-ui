@@ -79,7 +79,7 @@ Emitter.propTypes = {
   onPress: PropTypes.func,
   /**
    * @property children
-   * @type Element
+   * @type Element Array
    * @default null
    * @description 子元素
    */

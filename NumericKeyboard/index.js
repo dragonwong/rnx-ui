@@ -130,7 +130,7 @@ NumericKeyboard.propTypes = {
   onPress: PropTypes.func,
   /**
    * @property deleteKeyContent
-   * @type Element
+   * @type String Element Array
    * @default  <Image source={delImgSource} />
    * @description 删除键类型
    */

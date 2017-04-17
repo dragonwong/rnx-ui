@@ -122,7 +122,7 @@ PlaceholderText.propTypes = {
   style: View.propTypes.style,
   /**
    * @property placeholder
-   * @type String
+   * @type String Element
    * @default ''
    * @description 占位元素
    */

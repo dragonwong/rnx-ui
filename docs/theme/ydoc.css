@@ -21,7 +21,7 @@
     color: rgb(70, 160, 231);
 }
 .ydoc .ydoc-banner-bg{
-    background-image: url(../../img/4.jpg);
+    background-image: url(./img/4.jpg);
     background-repeat:no-repeat;
     background-size:100% 230px;
 }
@@ -38,6 +38,10 @@
     box-shadow: 0 0 10px #97b9e1;
 }
 /* content-left */
+.ydoc-container-content .content-left{
+    padding-left:4%;
+}
+
 .ydoc-container-content .docs-sidebar .docs-sidenav li a:hover {
     background-color: #dff0ff;
     border-left-color: #dff0ff;
@@ -57,7 +61,12 @@
     background-color: #fdfeff;
     border: 1px solid #dff0ff;
 }
-
+.con-head{
+    color:#f00;
+}
+.prop-type{
+    color:#f00;
+}
 /* footer */
 .ydoc .footer {
     background: #07233c;

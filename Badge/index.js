@@ -119,14 +119,14 @@ Badge.propTypes = {
   characterWidth: PropTypes.number,
   /**
      * @property text
-     * @type String
+     * @type String Number
      * @default ''
      * @description 角标文本内容
      */
   text: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /**
      * @property children
-     * @type Element
+     * @type Element Array
      * @default null
      * @description 主体元素
      */

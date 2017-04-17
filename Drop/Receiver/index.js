@@ -152,7 +152,7 @@ Receiver.propTypes = {
   style: View.propTypes.style,
   /**
    * @property children
-   * @type Element
+   * @type Element Array
    * @default null
    * @description 子元素
    */

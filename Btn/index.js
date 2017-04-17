@@ -111,7 +111,7 @@ Btn.propTypes = {
   onPress: PropTypes.func,
   /**
    * @property children
-   * @type String
+   * @type String Array
    * @default '下一步'
    * @description 按钮内容
    */

@@ -211,7 +211,7 @@ KeyboardAdaptiveView.propTypes = {
   style: View.propTypes.style,
   /**
    * @property children
-   * @type Array
+   * @type Element Array
    * @default null
    * @description 子元素
    */

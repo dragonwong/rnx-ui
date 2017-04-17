@@ -136,7 +136,7 @@ NavBar.propTypes = {
   headerHeight: PropTypes.number,
   /**
    * @property title
-   * @type String
+   * @type String Element
    * @default ''
    * @description 标题
    */
@@ -157,7 +157,7 @@ NavBar.propTypes = {
   titleGap: PropTypes.number,
   /**
    * @property leftBtn
-   * @type Object
+   * @type String Element
    * @default null
    * @description 左侧按钮
    */
@@ -185,7 +185,7 @@ NavBar.propTypes = {
   leftBtnDisabled: PropTypes.bool,
   /**
    * @property rightBtn
-   * @type Object
+   * @type String Element
    * @default null
    * @description 右侧按钮
    */

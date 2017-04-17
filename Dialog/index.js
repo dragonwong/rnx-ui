@@ -139,7 +139,7 @@ Dialog.propTypes = {
   visible: PropTypes.bool,
   /**
    * @property title
-   * @type String
+   * @type String Element
    * @default ''
    * @description 标题
    */
@@ -153,7 +153,7 @@ Dialog.propTypes = {
   titleStyle: Text.propTypes.style,
   /**
    * @property message
-   * @type String
+   * @type String Element
    * @default ''
    * @description 内容
    */

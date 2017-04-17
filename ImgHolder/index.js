@@ -66,14 +66,14 @@ ImgHolder.propTypes = {
   imgStyle: Image.propTypes.style,
   /**
    * @property holder
-   * @type Object
+   * @type Element Array
    * @default null
    * @description 占位元素
    */
   holder: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
   /**
    * @property source
-   * @type Object
+   * @type Object Number
    * @default {
    *      uri: '',
    *  },

@@ -270,14 +270,14 @@ AddAndSubtract.propTypes = {
   textStyle: Text.propTypes.style,
     /**
      * @property adder
-     * @type Element
+     * @type Element Array
      * @default null
      * @description 加法按钮
      */
   adder: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
     /**
      * @property subtracter
-     * @type Element
+     * @type Element Array
      * @default <Text style={styles.adderText}>+</Text>
      * @description 减法按钮
      */

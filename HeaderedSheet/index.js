@@ -176,7 +176,7 @@ HeaderedSheet.propTypes = {
   headerStyle: View.propTypes.style,
   /**
    * @property title
-   * @type String
+   * @type String Element
    * @default ''
    * @description 标题
    */
@@ -197,7 +197,7 @@ HeaderedSheet.propTypes = {
   titleGap: PropTypes.number,
    /**
    * @property leftBtn
-   * @type Object
+   * @type String Element
    * @default null
    * @description  左侧按钮
    */
@@ -218,7 +218,7 @@ HeaderedSheet.propTypes = {
   leftBtnStyle: Text.propTypes.style,
   /**
    * @property rightBtn
-   * @type Object
+   * @type String  Element
    * @default null
    * @description  右侧按钮
    */
@@ -246,7 +246,7 @@ HeaderedSheet.propTypes = {
   activeOpacity: PropTypes.number,
   /**
    * @property children
-   * @type Element
+   * @type Element Array
    * @default null
    * @description  子元素
    */

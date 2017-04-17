@@ -176,7 +176,7 @@ DynamicText.propTypes = {
   textStyle: Text.propTypes.style,
   /**
    * @property children
-   * @type Object
+   * @type String Number
    * @default null
    * @description 显示文本
    */
@@ -185,6 +185,8 @@ DynamicText.propTypes = {
    * @property mode
    * @type String
    * @default MODE_REVERSE
+   * @param {String} MODE_RESTART 轮转到末尾后返回至开头重新循环
+   * @param {String} MODE_REVERSE 轮转到末尾后再轮转回开头
    * @description 文字循环模式，默认reverse
    * reverse:轮转到末尾后再轮转回开头
    * restart: 轮转到末尾后返回至开头重新循环

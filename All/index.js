@@ -45,7 +45,7 @@ class All extends Component {
 All.propTypes = {
   /**
    * @property children
-   * @type Element
+   * @type Element Array
    * @default null
    * @description 子元素
    */
