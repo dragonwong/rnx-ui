@@ -2,6 +2,8 @@
  * @component ImgPicker
  * @version 0.11.7
  * @description 图片选择组件
+ *
+ * ![ImgPicker](https://github.com/wangkexinW/rnx-ui/blob/doc/ImgPicker/ImgPicker.png?raw=true)
  * @example
  * import ImgPicker from 'rnx-ui/ImgPicker';
  * function Example(props) {
