@@ -1,6 +1,7 @@
 /**
  * @component All
  * @description 页面级容器，内置了 `StatusBar`。
+ *
  * @example
  * import All from 'rnx-ui/All';
  *  function Example(props) {

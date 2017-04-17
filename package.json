@@ -39,6 +39,7 @@
     "lint"
   ],
   "dependencies": {
-    "ydoc-theme-library": "0.0.1"
+    "ydoc-theme-library": "0.0.1",
+    "ydoc-theme-ocean": "0.0.2"
   }
 }

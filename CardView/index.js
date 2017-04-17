@@ -24,7 +24,8 @@
  *   />
  * );
  * }
- * ![CardView](http://wx3.sinaimg.cn/mw690/4c8b519dly1fdgvohgt53g20hs0wsaip.gif)
+ *
+ *
  */
 import React, {
   Component,

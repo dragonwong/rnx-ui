@@ -3,7 +3,6 @@
  * @version 0.17.0
  * @description 像素（px）转虚拟像素（dp）方法
  *
- * ## 使用说明
  *  React Native 的长度单位为 dp，意思是独立像素，不是真实的物理像素，1dp 在不同 PixelRatio（像素比）的设备上会等于不同 px，
  *  比如 iPhone 456 是 2px，iPhone 6s 是 3px，所以在 rn 代码里写一个宽度为 1 的边框，在 iPhone 5 上看上去会有 2 像素宽，
  *  在 iPhone 6s 上看上去会有 3 像素宽。
