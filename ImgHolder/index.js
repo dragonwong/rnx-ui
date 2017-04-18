@@ -75,7 +75,7 @@ ImgHolder.propTypes = {
    * @property source
    * @type Object Number
    * @default {
-   *      uri: '',
+   *      uri: ''
    *  },
    * @description 图片资源
    */
