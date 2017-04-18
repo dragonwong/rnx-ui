@@ -774,19 +774,19 @@
 <div class="con-head">示例</div>
 <pre class="ydoc-example" ><code>import { Dropper,} from 'rnx-ui/Drop';
 function DropperImg(props) {
-return (
-   &lt;Dropper
-    style={[styles.dropper, {
-     overflow: 'hidden',
+  return (
+     &lt;Dropper
+      style={[styles.dropper, {
+      overflow: 'hidden',
       backgroundColor: 'pink',
-     }]}
-     startPosition={props.startPosition}
-     endPosition={props.endPosition}
-     width={50}
-     height={50}
-     onEnd={props.onEnd}
-   &gt;
-    &lt;Image
+       }]}
+       startPosition={props.startPosition}
+       endPosition={props.endPosition}
+       width={50}
+       height={50}
+       onEnd={props.onEnd}
+     &gt;
+     &lt;Image
        source={{
         uri: 'http://tva1.sinaimg.cn/crop.0.0.217.217.180/4c8b519djw8fa45br0vpxj2062062q33.jpg',
        }}
@@ -794,9 +794,9 @@ return (
         width: 50,
         height: 50,
        }}
-     /&gt;
+      /&gt;
    &lt;/Dropper&gt;
- );
+  );
  }</code></pre>
 
 

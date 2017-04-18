@@ -606,21 +606,21 @@
 <pre class="ydoc-example" ><code>import {Receiver,} from 'rnx-ui/Drop';
 import Badge from 'rnx-ui/Drop';
 function CartReceiver(props) {
-return (
-   &lt;Receiver
-     ref={props.getEl}
-     getCenterPosition={props.getCenterPosition}
-     style={styles.all}
-   &gt;
-    &lt;Badge
-       text={props.count}
-       textContainerStyle={styles.textContainer}
+  return (
+     &lt;Receiver
+       ref={props.getEl}
+       getCenterPosition={props.getCenterPosition}
+       style={styles.all}
      &gt;
-      &lt;Cart
-         style={styles.cart}
-         iconStyle={styles.icon}
-       /&gt;
-     &lt;/Badge&gt;
+       &lt;Badge
+         text={props.count}
+         textContainerStyle={styles.textContainer}
+       &gt;
+         &lt;Cart
+           style={styles.cart}
+           iconStyle={styles.icon}
+         /&gt;
+       &lt;/Badge&gt;
    &lt;/Receiver&gt;
  );
  }</code></pre>

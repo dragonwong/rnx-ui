@@ -594,41 +594,39 @@
 
 
 <div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import KeyboardAdaptiveView, {
- keyboardDismissMode,
-}  from 'rnx-ui/Drop';
+<pre class="ydoc-example" ><code>import KeyboardAdaptiveView, {keyboardDismissMode,} from 'rnx-ui/Drop';
 class Example extends Component {
-constructor(props) {
-   super(props);
- this.getKeyboardAdaptiveView = this.getKeyboardAdaptiveView.bind(this);
- this.onFocus = this.onFocus.bind(this);
- }
-onFocus(e) {
- if (this.keyboardAdaptiveView) {
-     this.keyboardAdaptiveView.inputFocusHandle(e);
+  constructor(props) {
+     super(props);
+   this.getKeyboardAdaptiveView = this.getKeyboardAdaptiveView.bind(this);
+   this.onFocus = this.onFocus.bind(this);
    }
- }
-getKeyboardAdaptiveView(el) {
- this.keyboardAdaptiveView = el;
- }
-render() {
-  return (
-     &lt;ScrollView
-       keyboardDismissMode={keyboardDismissMode}
-     &gt;
+  onFocus(e) {
+   if (this.keyboardAdaptiveView) {
+       this.keyboardAdaptiveView.inputFocusHandle(e);
+     }
+   }
+  getKeyboardAdaptiveView(el) {
+   this.keyboardAdaptiveView = el;
+   }
+  render() {
+    return (
+       &lt;ScrollView
+         keyboardDismissMode={keyboardDismissMode}
+       &gt;
        &lt;KeyboardAdaptiveView
          getEl={this.getKeyboardAdaptiveView}
        &gt;
-       &lt;View style={styles.inputWrapper}&gt;
-           &lt;TextInput
-             style={styles.input}
-             onFocus={this.onFocus}
+      &lt;View style={styles.inputWrapper}&gt;
+          &lt;TextInput
+            style={styles.input}
+            onFocus={this.onFocus}
            /&gt;
-         &lt;/View&gt;
+        &lt;/View&gt;
        &lt;/KeyboardAdaptiveView&gt;
      &lt;/ScrollView&gt;
-   );
- }
+     );
+   }
  }</code></pre>
 
 
