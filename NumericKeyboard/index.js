@@ -131,8 +131,8 @@ NumericKeyboard.propTypes = {
   /**
    * @property deleteKeyContent
    * @type String Element Array
-   * @default  <Image source={delImgSource} />
-   * @description 删除键类型
+   * @default <Image source={delImgSource} />
+   * @description 删除键内容
    */
   deleteKeyContent: PropTypes.oneOfType([PropTypes.string, PropTypes.element, PropTypes.array]),
 };
