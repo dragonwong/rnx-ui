@@ -4,11 +4,11 @@
  *
  * @example
  * import All from 'rnx-ui/All';
- *  function Example(props) {
+ * function Example(props) {
  *   return (
  *     <All />
  *   );
- *  }
+ * }
  */
 import React, {
   PropTypes,
