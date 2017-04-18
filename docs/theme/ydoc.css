@@ -38,9 +38,9 @@
     box-shadow: 0 0 10px #97b9e1;
 }
 /* content-left */
-.ydoc-container-content .content-left{
+/*.ydoc-container-content .content-left{
     padding-left:4%;
-}
+}*/
 
 .ydoc-container-content .docs-sidebar .docs-sidenav li a:hover {
     background-color: #dff0ff;
