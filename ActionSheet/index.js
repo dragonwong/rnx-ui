@@ -5,9 +5,9 @@
  * @example
  * import ActionSheet from 'rnx-ui/ActionSheet';
  * function Example(props) {
- * return (
- *   <ActionSheet />
- * );
+ *   return (
+ *     <ActionSheet />
+ *   );
  * }
  */
 import React, { Component, PropTypes } from 'react';

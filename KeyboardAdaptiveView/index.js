@@ -21,41 +21,39 @@
  *
  * ![KeyboardAdaptiveView](http://wx2.sinaimg.cn/mw690/4c8b519dly1fbztgmfj0lg20ho0wgqv8.gif)
  * @example
- * import KeyboardAdaptiveView, {
- * keyboardDismissMode,
- * } from 'rnx-ui/Drop';
+ * import KeyboardAdaptiveView, {keyboardDismissMode,} from 'rnx-ui/Drop';
  * class Example extends Component {
- * constructor(props) {
- *   super(props);
- *   this.getKeyboardAdaptiveView = this.getKeyboardAdaptiveView.bind(this);
- *   this.onFocus = this.onFocus.bind(this);
- * }
- * onFocus(e) {
- *   if (this.keyboardAdaptiveView) {
- *     this.keyboardAdaptiveView.inputFocusHandle(e);
+ *   constructor(props) {
+ *     super(props);
+ *     this.getKeyboardAdaptiveView = this.getKeyboardAdaptiveView.bind(this);
+ *     this.onFocus = this.onFocus.bind(this);
  *   }
- * }
- * getKeyboardAdaptiveView(el) {
- *   this.keyboardAdaptiveView = el;
- * }
- * render() {
- *   return (
- *     <ScrollView
- *       keyboardDismissMode={keyboardDismissMode}
- *     >
+ *   onFocus(e) {
+ *     if (this.keyboardAdaptiveView) {
+ *       this.keyboardAdaptiveView.inputFocusHandle(e);
+ *     }
+ *   }
+ *   getKeyboardAdaptiveView(el) {
+ *     this.keyboardAdaptiveView = el;
+ *   }
+ *   render() {
+ *     return (
+ *       <ScrollView
+ *         keyboardDismissMode={keyboardDismissMode}
+ *       >
  *       <KeyboardAdaptiveView
  *         getEl={this.getKeyboardAdaptiveView}
  *       >
- *        <View style={styles.inputWrapper}>
- *           <TextInput
- *             style={styles.input}
- *             onFocus={this.onFocus}
+ *       <View style={styles.inputWrapper}>
+ *          <TextInput
+ *            style={styles.input}
+ *            onFocus={this.onFocus}
  *           />
- *         </View>
+ *        </View>
  *       </KeyboardAdaptiveView>
  *     </ScrollView>
- *   );
- * }
+ *     );
+ *   }
  * }
  */
 import React, {

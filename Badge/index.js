@@ -11,11 +11,11 @@
  * @example
  * import Badge from 'rnx-ui/Badge';
  * function Example(props) {
- * return (
- *   <Badge text={8}>
- *     <Icon name="commenting-o" style={styles.icon} />
- *   </Badge>
- * )
+ *   return (
+ *     <Badge text={8}>
+ *       <Icon name="commenting-o" style={styles.icon} />
+ *     </Badge>
+ *   )
  * }
  */
 import React, {

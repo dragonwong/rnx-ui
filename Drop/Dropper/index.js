@@ -11,19 +11,19 @@
  * @example
  * import { Dropper,} from 'rnx-ui/Drop';
  * function DropperImg(props) {
- * return (
- *   <Dropper
- *     style={[styles.dropper, {
- *      overflow: 'hidden',
+ *   return (
+ *     <Dropper
+ *       style={[styles.dropper, {
+ *       overflow: 'hidden',
  *       backgroundColor: 'pink',
- *     }]}
- *     startPosition={props.startPosition}
- *     endPosition={props.endPosition}
- *     width={50}
- *     height={50}
- *     onEnd={props.onEnd}
- *   >
- *    <Image
+ *       }]}
+ *       startPosition={props.startPosition}
+ *       endPosition={props.endPosition}
+ *       width={50}
+ *       height={50}
+ *       onEnd={props.onEnd}
+ *     >
+ *     <Image
  *       source={{
  *         uri: 'http://tva1.sinaimg.cn/crop.0.0.217.217.180/4c8b519djw8fa45br0vpxj2062062q33.jpg',
  *       }}
@@ -31,9 +31,9 @@
  *         width: 50,
  *         height: 50,
  *       }}
- *     />
+ *      />
  *   </Dropper>
- * );
+ *  );
  * }
  */
 import React, {

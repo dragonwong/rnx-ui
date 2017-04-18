@@ -6,8 +6,8 @@
  *
  * ![NumericKeyboard](http://wx2.sinaimg.cn/mw690/4c8b519dly1fbztgpbw6gg20ho0wgx6p.gif)
  *  @example
- *  import NumericKeyboard from 'rnx-ui/NumericKeyboard';
- *  function Example(props) {
+ * import NumericKeyboard from 'rnx-ui/NumericKeyboard';
+ * function Example(props) {
  *   return (
  *     <NumericKeyboard
  *       onPress={this.onInput}

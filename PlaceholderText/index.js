@@ -5,12 +5,12 @@
  * @example
  * import PlaceholderText from 'rnx-ui/PlaceholderText';
  * function Example(props) {
- * return (
- *   <PlaceholderText
- *     placeholder={this.placeholder}
- *   />
- * );
- *}
+ *   return (
+ *     <PlaceholderText
+ *       placeholder={this.placeholder}
+ *     />
+ *   );
+ * }
  */
 import React, {
   PropTypes,

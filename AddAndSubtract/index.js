@@ -7,13 +7,13 @@
  * @example
  * import Template from 'rnx-ui/Template';
  * function Example(props) {
- * return (
- *   <AddAndSubtract
- *     num={this.state.num}
- *     onPressAdder={this.add}
- *     onPressSubtracter={this.subtract}
- *   />
- *  );
+ *   return (
+ *     <AddAndSubtract
+ *       num={this.state.num}
+ *       onPressAdder={this.add}
+ *       onPressSubtracter={this.subtract}
+ *     />
+ *   );
  * }
  */
 import React, {

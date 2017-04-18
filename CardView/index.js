@@ -15,14 +15,14 @@
  * @example
  * import CardView from 'rnx-ui/CardView';
  * function Example(props) {
- * return (
- *  <CardView
- *     style={styles.cardView}
- *     cards={this.state.cards}
- *     cardGap={20}
- *     onChange={this.onChange}
- *   />
- * );
+ *   return (
+ *     <CardView
+ *       style={styles.cardView}
+ *       cards={this.state.cards}
+ *       cardGap={20}
+ *       onChange={this.onChange}
+ *     />
+ *   );
  * }
  *
  *

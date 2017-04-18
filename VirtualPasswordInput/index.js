@@ -8,12 +8,12 @@
  * @example
  * import VirtualPasswordInput from 'rnx-ui/VirtualPasswordInput';
  * function Example(props) {
- * return (
- *   <VirtualPasswordInput
- *     onPress={this.onPressPswdInput}
- *     value={this.state.pswd}
- *   />
- *  );
+ *   return (
+ *     <VirtualPasswordInput
+ *       onPress={this.onPressPswdInput}
+ *       value={this.state.pswd}
+ *     />
+ *   );
  * }
  */
 
