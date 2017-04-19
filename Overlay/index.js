@@ -36,6 +36,7 @@ class Overlay extends Component {
     super(props);
 
     const visible = props.visible;
+
     this.state = {
       visible,
       opacity: new Animated.Value(visible ? 1 : 0),
@@ -63,21 +64,33 @@ class Overlay extends Component {
 
   // 显示
   show() {
-    this.aniHide.stop();
+    if (this.props.useAnimation) {
+      this.aniHide.stop();
+    }
+
     this.setState({
       visible: true,
     });
-    this.aniShow.start();
+
+    if (this.props.useAnimation) {
+      this.aniShow.start();
+    }
   }
 
   // 隐藏
   hide() {
-    this.aniShow.stop();
-    this.aniHide.start(() => {
+    if (this.props.useAnimation) {
+      this.aniHide.stop();
+      this.aniHide.start(() => {
+        this.setState({
+          visible: false,
+        });
+      });
+    } else {
       this.setState({
         visible: false,
       });
-    });
+    }
   }
 
   render() {
@@ -89,14 +102,25 @@ class Overlay extends Component {
       <TouchableWithoutFeedback
         onPress={this.props.onPress}
       >
-        <Animated.View
-          style={[styles.all, {
-            opacity: this.state.opacity,
-          }, this.props.style]}
-          pointerEvents={this.props.pointerEvents}
-        >
-          {this.props.children}
-        </Animated.View>
+        {
+          this.props.useAnimation ? (
+            <Animated.View
+              style={[styles.all, {
+                opacity: this.state.opacity,
+              }, this.props.style]}
+              pointerEvents={this.props.pointerEvents}
+            >
+              {this.props.children}
+            </Animated.View>
+          ) : (
+            <View
+              style={[styles.all, this.props.style]}
+              pointerEvents={this.props.pointerEvents}
+            >
+              {this.props.children}
+            </View>
+          )
+        }
       </TouchableWithoutFeedback>
     );
   }
@@ -135,10 +159,9 @@ Overlay.propTypes = {
    * @property pointerEvents
    * @type String
    * @default 'auto'
-   * @description 控制 Overlay 是否可以作为触控事件的目标
+   * @description 控制 Overlay 是否可以作为触控事件的目标（参考 https://facebook.github.io/react-native/docs/view.html#pointerevents）
    */
   pointerEvents: View.propTypes.pointerEvents,
-
   /**
    * @property duration
    * @type Number
@@ -146,6 +169,13 @@ Overlay.propTypes = {
    * @description 动画时长
    */
   duration: PropTypes.number,
+   /**
+   * @property useAnimation
+   * @type Boolean
+   * @default true
+   * @description 是否使用动画
+   */
+  useAnimation: PropTypes.bool,
 };
 Overlay.defaultProps = {
   visible: false,
@@ -154,6 +184,7 @@ Overlay.defaultProps = {
   children: null,
   pointerEvents: 'auto',
   duration: 200,
+  useAnimation: true,
 };
 
 export default Overlay;

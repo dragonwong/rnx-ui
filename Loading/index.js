@@ -1,6 +1,6 @@
 /**
  * @component Loading
- * @version 0.17.0
+ * @version 0.17.1
  * @description 菊花加载中组件
  *
  * @instructions {instruInfo: ./Loading.md}
@@ -39,6 +39,7 @@ class Loading extends Component {
       <Overlay
         visible={this.props.visible}
         style={[styles.overlay, this.props.overlayStyle]}
+        useAnimation={this.props.useOverlayAnimation}
       >
         <View style={[styles.loader, this.props.loaderStyle]}>
           <ActivityIndicator
@@ -88,6 +89,13 @@ Loading.propTypes = {
    * @description 菊花图标的大小
    */
   size: ActivityIndicator.propTypes.size,
+  /**
+   * @property useOverlayAnimation
+   * @type String
+   * @default 'small'
+   * @description 是否使用 Overlay 动画
+   */
+  useOverlayAnimation: PropTypes.bool,
 };
 Loading.defaultProps = {
   visible: false,
@@ -95,6 +103,7 @@ Loading.defaultProps = {
   loaderStyle: null,
   color: '#fff',
   size: 'small',
+  useOverlayAnimation: true,
 };
 
 export default Loading;

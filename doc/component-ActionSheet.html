@@ -449,12 +449,24 @@
         <div class="instructions-con">
             
             <div class="instructions-con-info">
-            <h4 id="example">Example</h4>
+            <h4 id="demo">Demo</h4>
+<p><img src="http://wx4.sinaimg.cn/mw690/4c8b519dly1feq4asyl44g20hs0wsguv.gif" alt="ActionSheet"></p>
+<h4 id="example">Example</h4>
 <pre><code class="lang-JavaScript"><span class="token keyword">import</span> ActionSheet <span class="token keyword">from</span> <span class="token string">'rnx-ui/ActionSheet'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">function</span> <span class="token function">Example</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>ActionSheet <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>ActionSheet
+      visible<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>visible<span class="token punctuation">}</span>
+      onClose<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>hide<span class="token punctuation">}</span>
+      btnList<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span><span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">'默认'</span><span class="token punctuation">,</span>
+        onPress<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>hide<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">'相册'</span><span class="token punctuation">,</span>
+        onPress<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>hide<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+    <span class="token operator">/</span><span class="token operator">></span>
   <span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>

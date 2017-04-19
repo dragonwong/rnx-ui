@@ -1,6 +1,6 @@
 /**
  * @component Dialog
- * @version 0.17.0
+ * @version 0.17.1
  * @description 警告弹框
  *
  * @instructions {instruInfo: ./Dialog.md}
@@ -96,6 +96,7 @@ class Dialog extends Component {
       <Overlay
         visible={this.props.visible}
         style={[styles.overlay, this.props.overlayStyle]}
+        useAnimation={this.props.useOverlayAnimation}
       >
         <View style={[styles.dialog, this.props.style]}>
           <View style={styles.content}>
@@ -189,6 +190,13 @@ Dialog.propTypes = {
    * @description 遮盖层样式
    */
   overlayStyle: View.propTypes.style,
+  /**
+   * @property useOverlayAnimation
+   * @type Boolean
+   * @default true
+   * @description 是否使用 Overlay 动画
+   */
+  useOverlayAnimation: PropTypes.bool,
 };
 Dialog.defaultProps = {
   visible: false,
@@ -200,6 +208,7 @@ Dialog.defaultProps = {
   buttons: [],
   style: null,
   overlayStyle: null,
+  useOverlayAnimation: true,
 };
 
 export default Dialog;
