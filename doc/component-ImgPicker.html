@@ -439,9 +439,49 @@
     <span class="yo-badge yo-badge-danger">0.11.7</span>
 </h2>
 <div class="api-content"><p>图片选择组件</p>
-<p><img src="https://github.com/wangkexinW/rnx-ui/blob/doc/ImgPicker/ImgPicker.png?raw=true" alt="ImgPicker"></p>
 </div>
 <!-- 使用说明begin -->
+
+<div class="con-list-item">
+    <div class="con-head">使用说明</div>
+  
+    <div class="instructions">
+        <div class="instructions-con">
+            
+            <div class="instructions-con-info">
+            <h4 id="demo">Demo</h4>
+<p><img src="https://github.com/wangkexinW/rnx-ui/blob/doc/ImgPicker/ImgPicker.png?raw=true" alt="ImgPicker"></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-JavaScript"><span class="token keyword">import</span> ImgPicker <span class="token keyword">from</span> <span class="token string">'rnx-ui/ImgPicker'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">Example</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>ImgPicker
+      images<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>images<span class="token punctuation">}</span>
+      adder<span class="token operator">=</span><span class="token punctuation">{</span>
+        <span class="token operator">&lt;</span>Icon name<span class="token operator">=</span><span class="token string">"add"</span> style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>imgPickerAdder<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token punctuation">}</span>
+      adderVisible<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>images<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> MAX_PHOTOS_NUMBER<span class="token punctuation">}</span>
+      imgDisplayerProps<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+        onImgPress<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>showPhoto<span class="token punctuation">,</span>
+        deleter<span class="token punctuation">:</span> <span class="token punctuation">(</span>
+          <span class="token operator">&lt;</span>Icon name<span class="token operator">=</span><span class="token string">"close"</span> style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>imgPickerDeleterIcon<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token punctuation">)</span><span class="token punctuation">,</span>
+        onDeleterPress<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>removePhoto<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">}</span>
+      onAdderPress<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>openCameraActionSheet<span class="token punctuation">}</span>
+    <span class="token operator">/</span><span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+            </div>
+            
+            
+        </div>
+    </div>
+ 
+</div>
 
 <!-- 使用说明end -->
 <div class="con-list-item">
@@ -639,28 +679,6 @@
 
 
 
-
-<div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import ImgPicker from 'rnx-ui/ImgPicker';
-function Example(props) {
- return (
-   &lt;ImgPicker
-     images={this.state.images}
-     adder={
-    &lt;Icon name="add" style={styles.imgPickerAdder} /&gt;
-     }
-   adderVisible={this.state.images.length &lt; MAX_PHOTOS_NUMBER}
-     imgDisplayerProps={{
-      onImgPress: this.showPhoto,
-      deleter: (
-      &lt;Icon name="close" style={styles.imgPickerDeleterIcon} /&gt;
-       ),
-      onDeleterPress: this.removePhoto,
-     }}
-     onAdderPress={this.openCameraActionSheet}
-   /&gt;
-  );
- }</code></pre>
 
 
 </div>

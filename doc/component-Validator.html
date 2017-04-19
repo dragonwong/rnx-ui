@@ -438,9 +438,89 @@
     <small></small>
     <span class="yo-badge yo-badge-danger">0.17.0</span>
 </h2>
-<div class="api-content"><p>提示框</p>
+<div class="api-content"><p>表单校验工具</p>
 </div>
 <!-- 使用说明begin -->
+
+<div class="con-list-item">
+    <div class="con-head">使用说明</div>
+  
+    <div class="instructions">
+        <div class="instructions-con">
+            
+            <div class="instructions-con-info">
+            <h4 id="example">Example</h4>
+<pre><code class="lang-JavaScript">
+ <span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+ <span class="token keyword">import</span> <span class="token punctuation">{</span>
+   StyleSheet<span class="token punctuation">,</span>
+   ScrollView<span class="token punctuation">,</span>
+ <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-native'</span><span class="token punctuation">;</span>
+ <span class="token keyword">import</span> <span class="token punctuation">{</span>
+   PView<span class="token punctuation">,</span>
+ <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'rnplus'</span><span class="token punctuation">;</span>
+ <span class="token keyword">import</span> PhoneNumInput <span class="token keyword">from</span> <span class="token string">'rnx-ui/PhoneNumInput'</span><span class="token punctuation">;</span>
+ <span class="token keyword">import</span> SmsCaptchaInput <span class="token keyword">from</span> <span class="token string">'rnx-ui/SmsCaptchaInput'</span><span class="token punctuation">;</span>
+ <span class="token keyword">import</span> Btn <span class="token keyword">from</span> <span class="token string">'rnx-ui/Btn'</span><span class="token punctuation">;</span>
+ <span class="token keyword">import</span> Validator <span class="token keyword">from</span> <span class="token string">'rnx-ui/util/Validator'</span><span class="token punctuation">;</span>
+ <span class="token keyword">import</span> <span class="token punctuation">{</span>
+   All<span class="token punctuation">,</span>
+   NavBar<span class="token punctuation">,</span>
+ <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'BizComponent'</span><span class="token punctuation">;</span>
+
+ <span class="token keyword">const</span> styles <span class="token operator">=</span> StyleSheet<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   scrollView<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+     paddingHorizontal<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+     paddingTop<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   btn<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+     marginTop<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ <span class="token keyword">class</span> <span class="token class-name">RnxUiValidator</span> <span class="token keyword">extends</span> <span class="token class-name">PView</span> <span class="token punctuation">{</span>
+   <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+     <span class="token keyword">this</span><span class="token punctuation">.</span>onPress <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>onPress<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token comment" spellcheck="true">// 验证器初始化</span>
+     <span class="token keyword">const</span> validator <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Validator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token keyword">this</span><span class="token punctuation">.</span>validator <span class="token operator">=</span> validator<span class="token punctuation">;</span>
+     <span class="token keyword">this</span><span class="token punctuation">.</span>collectValidate <span class="token operator">=</span> validator<span class="token punctuation">.</span>collect<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token function">onPress</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>validator<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token punctuation">(</span>
+       <span class="token operator">&lt;</span>All<span class="token operator">></span>
+         <span class="token operator">&lt;</span>NavBar title<span class="token operator">=</span><span class="token string">"Validator"</span> <span class="token operator">/</span><span class="token operator">></span>
+         <span class="token operator">&lt;</span>ScrollView style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>scrollView<span class="token punctuation">}</span><span class="token operator">></span>
+           <span class="token operator">&lt;</span>PhoneNumInput
+             collectValidate<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>collectValidate<span class="token punctuation">}</span>
+             name<span class="token operator">=</span><span class="token string">"HANDSOME_NAME"</span>
+             readableName<span class="token operator">=</span><span class="token string">"帅气的名字"</span>
+           <span class="token operator">/</span><span class="token operator">></span>
+           <span class="token operator">&lt;</span>SmsCaptchaInput collectValidate<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>collectValidate<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+           <span class="token operator">&lt;</span>Btn
+             style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>btn<span class="token punctuation">}</span>
+             onPress<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>onPress<span class="token punctuation">}</span>
+           <span class="token operator">/</span><span class="token operator">></span>
+         <span class="token operator">&lt;</span><span class="token operator">/</span>ScrollView<span class="token operator">></span>
+       <span class="token operator">&lt;</span><span class="token operator">/</span>All<span class="token operator">></span>
+     <span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+</code></pre>
+
+            </div>
+            
+            
+        </div>
+    </div>
+ 
+</div>
 
 <!-- 使用说明end -->
 <div class="con-list-item">

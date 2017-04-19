@@ -439,9 +439,43 @@
     <span class="yo-badge yo-badge-danger">0.17.0</span>
 </h2>
 <div class="api-content"><p>警告弹框</p>
-<p><img src="http://wx3.sinaimg.cn/mw690/4c8b519dly1fdulkkgmsog20hs0wsn81.gif" alt="Dialog"></p>
 </div>
 <!-- 使用说明begin -->
+
+<div class="con-list-item">
+    <div class="con-head">使用说明</div>
+  
+    <div class="instructions">
+        <div class="instructions-con">
+            
+            <div class="instructions-con-info">
+            <h4 id="demo">Demo</h4>
+<p><img src="http://wx3.sinaimg.cn/mw690/4c8b519dly1fdulkkgmsog20hs0wsn81.gif" alt="Dialog"></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-JavaScript"><span class="token keyword">import</span> Dialog <span class="token keyword">from</span> <span class="token string">'rnx-ui/Dialog'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">Example</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>Dialog
+      visible<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>visible<span class="token punctuation">}</span>
+      title<span class="token operator">=</span><span class="token string">"无法连接服务器"</span>
+      message<span class="token operator">=</span><span class="token string">"未能完成所请求的操作，因为与服务器的通信出错。"</span>
+      buttons<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span><span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">'吼啊'</span><span class="token punctuation">,</span>
+        onPress<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>hide<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+    <span class="token operator">/</span><span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+            </div>
+            
+            
+        </div>
+    </div>
+ 
+</div>
 
 <!-- 使用说明end -->
 <div class="con-list-item">
@@ -639,22 +673,6 @@
 
 
 
-
-<div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import Dialog from 'rnx-ui/Dialog';
-function Example(props) {
-  return (
-     &lt;Dialog
-       visible={this.state.visible}
-       title="无法连接服务器"
-       message="未能完成所请求的操作，因为与服务器的通信出错。"
-       buttons={[{
-      text: '吼啊',
-      onPress: this.hide,
-       }]}
-     /&gt;
-   );
- }</code></pre>
 
 
 </div>

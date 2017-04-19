@@ -447,6 +447,48 @@
 </div>
 <!-- 使用说明begin -->
 
+<div class="con-list-item">
+    <div class="con-head">使用说明</div>
+  
+    <div class="instructions">
+        <div class="instructions-con">
+            
+            <div class="instructions-con-info">
+            <h4 id="example">Example</h4>
+<pre><code class="lang-JavaScript"><span class="token keyword">import</span> <span class="token punctuation">{</span>
+  Receiver<span class="token punctuation">,</span>
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'rnx-ui/Drop'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Badge <span class="token keyword">from</span> <span class="token string">'rnx-ui/Drop'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">CartReceiver</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>Receiver
+      ref<span class="token operator">=</span><span class="token punctuation">{</span>props<span class="token punctuation">.</span>getEl<span class="token punctuation">}</span>
+      getCenterPosition<span class="token operator">=</span><span class="token punctuation">{</span>props<span class="token punctuation">.</span>getCenterPosition<span class="token punctuation">}</span>
+      style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>all<span class="token punctuation">}</span>
+    <span class="token operator">></span>
+      <span class="token operator">&lt;</span>Badge
+        text<span class="token operator">=</span><span class="token punctuation">{</span>props<span class="token punctuation">.</span>count<span class="token punctuation">}</span>
+        textContainerStyle<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>textContainer<span class="token punctuation">}</span>
+      <span class="token operator">></span>
+        <span class="token operator">&lt;</span>Cart
+          style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>cart<span class="token punctuation">}</span>
+          iconStyle<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>icon<span class="token punctuation">}</span>
+        <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>Badge<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>Receiver<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+            </div>
+            
+            
+        </div>
+    </div>
+ 
+</div>
+
 <!-- 使用说明end -->
 <div class="con-list-item">
 
@@ -601,29 +643,6 @@
 
 
 
-
-<div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import {Receiver,} from 'rnx-ui/Drop';
-import Badge from 'rnx-ui/Drop';
-function CartReceiver(props) {
-  return (
-     &lt;Receiver
-       ref={props.getEl}
-       getCenterPosition={props.getCenterPosition}
-       style={styles.all}
-     &gt;
-       &lt;Badge
-         text={props.count}
-         textContainerStyle={styles.textContainer}
-       &gt;
-         &lt;Cart
-           style={styles.cart}
-           iconStyle={styles.icon}
-         /&gt;
-       &lt;/Badge&gt;
-   &lt;/Receiver&gt;
- );
- }</code></pre>
 
 
 </div>

@@ -20,7 +20,7 @@
  *
  *  >rnx-ui 表单校验工具[Validator](https://github.com/dragonwong/rnx-ui/tree/master/util/Validator) 现已支持该组件。
  *
- * ![SmsCaptchaInput](https://github.com/wangkexinW/rnx-ui/blob/doc/SmsCaptchaInput/SmsCaptchaInput.png?raw=true)
+ * @instructions {instruInfo: ./SmsCaptchaInput.md}
  */
 
 import React, { Component, PropTypes } from 'react';

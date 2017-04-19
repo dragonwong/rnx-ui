@@ -439,14 +439,44 @@
     <span class="yo-badge yo-badge-danger">0.11.4</span>
 </h2>
 <div class="api-content"><p>角标组件 通常用来显示未读消息数目。</p>
-<p>⚠️ 注意</p>
-<ol>
-<li>角标宽度是动态计算的，随角标内容的增长而变长。当你通过 <code>textStyle</code> 改变角标内容的字体大小时，注意配置相符的 <code>characterWidth</code>。</li>
-<li>Badge 没有宽度，宽度随外部容器变化。</li>
-</ol>
-<p><img src="https://github.com/wangkexinW/rnx-ui/blob/master/Badge/demo.png?raw=true" alt="Badge"></p>
 </div>
 <!-- 使用说明begin -->
+
+<div class="con-list-item">
+    <div class="con-head">使用说明</div>
+  
+    <div class="instructions">
+        <div class="instructions-con">
+            
+            <div class="instructions-con-info">
+            <h4 id="demo">Demo</h4>
+<p><img src="https://github.com/wangkexinW/rnx-ui/blob/master/Badge/demo.png?raw=true" alt="Badge"></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-JavaScript"><span class="token keyword">import</span> Badge <span class="token keyword">from</span> <span class="token string">'rnx-ui/Badge'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">Example</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>Badge text<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">8</span><span class="token punctuation">}</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>Icon name<span class="token operator">=</span><span class="token string">"commenting-o"</span> style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>icon<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>Badge<span class="token operator">></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="-">⚠️ 注意</h3>
+<ol>
+<li><p>角标宽度是动态计算的，随角标内容的增长而变长。当你通过 <code>textStyle</code> 改变角标内容的字体大小时，注意配置相符的 <code>characterWidth</code>。</p>
+</li>
+<li><p>Badge 没有宽度，宽度随外部容器变化。</p>
+</li>
+</ol>
+
+            </div>
+            
+            
+        </div>
+    </div>
+ 
+</div>
 
 <!-- 使用说明end -->
 <div class="con-list-item">
@@ -581,16 +611,6 @@
 
 
 
-
-<div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import Badge from 'rnx-ui/Badge';
-function Example(props) {
-  return (
-    &lt;Badge text={8}&gt;
-    &lt;Icon name="commenting-o" style={styles.icon} /&gt;
-     &lt;/Badge&gt;
-   )
- }</code></pre>
 
 
 </div>

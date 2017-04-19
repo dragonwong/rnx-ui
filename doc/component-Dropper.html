@@ -440,13 +440,62 @@
 </h2>
 <div class="api-content"><p>掉落组件
 用来包裹掉落元素，提供抛物线运动的动画。</p>
-<p>⚠️ 注意</p>
-<ol>
-<li>必须提供起点和终点坐标，起点和终点坐标可以通过 <code>Emitter</code> 和 <code>Receiver</code> 非常方便地获取到。</li>
-<li>强烈建议提供掉落元素的宽高，这样，<code>Dropper</code> 会将自身的中心置于起点，否则置于起点的将是 <code>Dropper</code> 的左上角。</li>
-</ol>
 </div>
 <!-- 使用说明begin -->
+
+<div class="con-list-item">
+    <div class="con-head">使用说明</div>
+  
+    <div class="instructions">
+        <div class="instructions-con">
+            
+            <div class="instructions-con-info">
+            <h4 id="example">Example</h4>
+<pre><code class="lang-JavaScript"><span class="token keyword">import</span> <span class="token punctuation">{</span>
+  Dropper<span class="token punctuation">,</span>
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'rnx-ui/Drop'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">DropperImg</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>Dropper
+      style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>styles<span class="token punctuation">.</span>dropper<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        overflow<span class="token punctuation">:</span> <span class="token string">'hidden'</span><span class="token punctuation">,</span>
+        backgroundColor<span class="token punctuation">:</span> <span class="token string">'pink'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+      startPosition<span class="token operator">=</span><span class="token punctuation">{</span>props<span class="token punctuation">.</span>startPosition<span class="token punctuation">}</span>
+      endPosition<span class="token operator">=</span><span class="token punctuation">{</span>props<span class="token punctuation">.</span>endPosition<span class="token punctuation">}</span>
+      width<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">50</span><span class="token punctuation">}</span>
+      height<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">50</span><span class="token punctuation">}</span>
+      onEnd<span class="token operator">=</span><span class="token punctuation">{</span>props<span class="token punctuation">.</span>onEnd<span class="token punctuation">}</span>
+    <span class="token operator">></span>
+      <span class="token operator">&lt;</span>Image
+        source<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+          uri<span class="token punctuation">:</span> <span class="token string">'http://tva1.sinaimg.cn/crop.0.0.217.217.180/4c8b519djw8fa45br0vpxj2062062q33.jpg'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">}</span>
+        style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+          width<span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+          height<span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">}</span>
+      <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>Dropper<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="-">⚠️ 注意</h3>
+<ol>
+<li><p>必须提供起点和终点坐标，起点和终点坐标可以通过 <code>Emitter</code> 和 <code>Receiver</code> 非常方便地获取到。</p>
+</li>
+<li><p>强烈建议提供掉落元素的宽高，这样，<code>Dropper</code> 会将自身的中心置于起点，否则置于起点的将是 <code>Dropper</code> 的左上角。</p>
+</li>
+</ol>
+
+            </div>
+            
+            
+        </div>
+    </div>
+ 
+</div>
 
 <!-- 使用说明end -->
 <div class="con-list-item">
@@ -770,34 +819,6 @@
 
 
 
-
-<div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import { Dropper,} from 'rnx-ui/Drop';
-function DropperImg(props) {
-  return (
-     &lt;Dropper
-      style={[styles.dropper, {
-      overflow: 'hidden',
-      backgroundColor: 'pink',
-       }]}
-       startPosition={props.startPosition}
-       endPosition={props.endPosition}
-       width={50}
-       height={50}
-       onEnd={props.onEnd}
-     &gt;
-     &lt;Image
-       source={{
-        uri: 'http://tva1.sinaimg.cn/crop.0.0.217.217.180/4c8b519djw8fa45br0vpxj2062062q33.jpg',
-       }}
-       style={{
-        width: 50,
-        height: 50,
-       }}
-      /&gt;
-   &lt;/Dropper&gt;
-  );
- }</code></pre>
 
 
 </div>

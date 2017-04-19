@@ -41,7 +41,9 @@
 /*.ydoc-container-content .content-left{
     padding-left:4%;
 }*/
-
+.ydoc-container-content .docs-sidebar.affix{
+    top:0px;
+}
 .ydoc-container-content .docs-sidebar .docs-sidenav li a:hover {
     background-color: #dff0ff;
     border-left-color: #dff0ff;
@@ -61,8 +63,11 @@
     background-color: #fdfeff;
     border: 1px solid #dff0ff;
 }
-.con-head{
+/*.con-head{
     color:#f00;
+}*/
+.markdown-body blockquote.api strong{
+    color:#e62929;
 }
 .prop-type{
     color:#f00;

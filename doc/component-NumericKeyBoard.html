@@ -433,16 +433,44 @@
 
                 
                 <div class="docs-section">
-<h2 id="NavbNumericKeyboardar">
-    NavbNumericKeyboardar
+<h2 id="NumericKeyboardar">
+    NumericKeyboardar
     <small></small>
     <span class="yo-badge yo-badge-danger">0.17.0</span>
 </h2>
-<div class="api-content"><p>虚拟数字键盘
-很多情况下系统的数字键盘不能满足我们的要求，比如不同平台数字键盘表现不一致，比如有的数字键盘存在小数点，比如需要配合虚拟输入框而系统的键盘又不易控制...</p>
-<p><img src="http://wx2.sinaimg.cn/mw690/4c8b519dly1fbztgpbw6gg20ho0wgx6p.gif" alt="NumericKeyboard"></p>
+<div class="api-content"><p>虚拟数字键盘</p>
 </div>
 <!-- 使用说明begin -->
+
+<div class="con-list-item">
+    <div class="con-head">使用说明</div>
+  
+    <div class="instructions">
+        <div class="instructions-con">
+            
+            <div class="instructions-con-info">
+            <p>很多情况下系统的数字键盘不能满足我们的要求，比如不同平台数字键盘表现不一致，比如有的数字键盘存在小数点，比如需要配合虚拟输入框而系统的键盘又不易控制...</p>
+<h4 id="demo">Demo</h4>
+<p><img src="http://wx2.sinaimg.cn/mw690/4c8b519dly1fbztgpbw6gg20ho0wgx6p.gif" alt="NumericKeyboard"></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-JavaScript"><span class="token keyword">import</span> NumericKeyboard <span class="token keyword">from</span> <span class="token string">'rnx-ui/NumericKeyboard'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">Example</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>NumericKeyboard
+      onPress<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>onInput<span class="token punctuation">}</span>
+    <span class="token operator">/</span><span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+            </div>
+            
+            
+        </div>
+    </div>
+ 
+</div>
 
 <!-- 使用说明end -->
 <div class="con-list-item">
@@ -514,16 +542,6 @@
 
 
 
-
-<div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import NumericKeyboard from 'rnx-ui/NumericKeyboard';
-function Example(props) {
-  return (
-     &lt;NumericKeyboard
-       onPress={this.onInput}
-     /&gt;
-   );
- }</code></pre>
 
 
 </div>

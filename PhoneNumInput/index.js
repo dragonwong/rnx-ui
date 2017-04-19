@@ -3,8 +3,7 @@
  * @version 0.13.1
  * @description 手机号码输入框组件
  *
- * ![PhoneNumInput](https://github.com/wangkexinW/rnx-ui/blob/doc/PhoneNumInput/phoneNumInput.png?raw=true)
- * > rnx-ui 表单校验工具[Validator](https://github.com/dragonwong/rnx-ui/tree/master/util/Validator) 现已支持该组件。
+ * @instructions {instruInfo: ./PhoneNumInput.md}
  */
 import React, { Component, PropTypes } from 'react';
 import {

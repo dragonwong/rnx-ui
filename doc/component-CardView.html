@@ -440,12 +440,44 @@
 </h2>
 <div class="api-content"><p>卡片视图
 以卡片样式浏览，并可以设置激活卡片样式。</p>
-<p>通过 <code>getEl</code> 属性获取 CardView 实例，调用 <code>scrollToCard</code> 方法可以</p>
-<p>⚠️ 注意</p>
-<p>CardView 会为卡片添加 <code>isActiveRnxUiCardView</code> 属性，激活卡片值为 <code>true</code>，其他卡片是 <code>false</code>。</p>
-<p><img src="http://wx3.sinaimg.cn/mw690/4c8b519dly1fdgvohgt53g20hs0wsaip.gif" alt="CardView"></p>
 </div>
 <!-- 使用说明begin -->
+
+<div class="con-list-item">
+    <div class="con-head">使用说明</div>
+  
+    <div class="instructions">
+        <div class="instructions-con">
+            
+            <div class="instructions-con-info">
+            <h4 id="-">基本用法</h4>
+<p>以卡片样式浏览，并可以设置激活卡片样式。</p>
+<h4 id="demo">Demo</h4>
+<p><img src="http://wx3.sinaimg.cn/mw690/4c8b519dly1fdgvohgt53g20hs0wsaip.gif" alt="CardView"></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-JavaScript"><span class="token keyword">import</span> CardView <span class="token keyword">from</span> <span class="token string">'rnx-ui/CardView'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">Example</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>CardView
+      style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>cardView<span class="token punctuation">}</span>
+      cards<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>cards<span class="token punctuation">}</span>
+      cardGap<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">20</span><span class="token punctuation">}</span>
+      onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>onChange<span class="token punctuation">}</span>
+    <span class="token operator">/</span><span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="-">⚠️ 注意</h3>
+<p>CardView 会为卡片添加 <code>isActiveRnxUiCardView</code> 属性，激活卡片值为 <code>true</code>，其他卡片是 <code>false</code>。</p>
+
+            </div>
+            
+            
+        </div>
+    </div>
+ 
+</div>
 
 <!-- 使用说明end -->
 <div class="con-list-item">
@@ -819,19 +851,6 @@
 
 
 
-
-<div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import CardView from 'rnx-ui/CardView';
-function Example(props) {
-  return (
-     &lt;CardView
-       style={styles.cardView}
-       cards={this.state.cards}
-       cardGap={20}
-       onChange={this.onChange}
-     /&gt;
-   );
- }</code></pre>
 
 
 </div>

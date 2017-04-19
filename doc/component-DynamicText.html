@@ -439,11 +439,37 @@
     <span class="yo-badge yo-badge-danger">0.17.0</span>
 </h2>
 <div class="api-content"><p>自动滚动的文本框：文字超长时滚动显示</p>
-<p>⚠️ 注意
-DynamicText 有 <code>maxWidth</code> 属性可以配置支持的最大的文本长度，当文本长度超过配置时，文本会显示为多行，此时需要配置更大的长度。</p>
-<p><img src="http://wx4.sinaimg.cn/mw690/4c8b519dly1fdrlqh8ujsg20hs0ws4qq.gif" alt="DynamicText"></p>
 </div>
 <!-- 使用说明begin -->
+
+<div class="con-list-item">
+    <div class="con-head">使用说明</div>
+  
+    <div class="instructions">
+        <div class="instructions-con">
+            
+            <div class="instructions-con-info">
+            <h4 id="demo">Demo</h4>
+<p><img src="http://wx4.sinaimg.cn/mw690/4c8b519dly1fdrlqh8ujsg20hs0ws4qq.gif" alt="DynamicText"></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-JavaScript"><span class="token keyword">import</span> DynamicText <span class="token keyword">from</span> <span class="token string">'rnx-ui/DynamicText'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">Example</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>DynamicText<span class="token operator">></span>自定义文字<span class="token operator">&lt;</span><span class="token operator">/</span>DynamicText<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="-">⚠️ 注意</h3>
+<p>DynamicText 有 <code>maxWidth</code> 属性可以配置支持的最大的文本长度，当文本长度超过配置时，文本会显示为多行，此时需要配置更大的长度。</p>
+
+            </div>
+            
+            
+        </div>
+    </div>
+ 
+</div>
 
 <!-- 使用说明end -->
 <div class="con-list-item">
@@ -647,14 +673,6 @@ restart: 轮转到末尾后返回至开头重新循环</p>
 
 
 
-
-<div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import DynamicText from 'rnx-ui/DynamicText';
- function Example(props) {
-    return (
-      &lt;DynamicText&gt;自定义文字&lt;/DynamicText&gt;
-     );
-   }</code></pre>
 
 
 </div>

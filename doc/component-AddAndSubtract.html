@@ -439,9 +439,39 @@
     <span class="yo-badge yo-badge-danger">0.17.0</span>
 </h2>
 <div class="api-content"><p>加减法动画组件</p>
-<p><img src="http://wx3.sinaimg.cn/mw690/4c8b519dly1fcaq7v2pnvg20ho0wgh0z.gif" alt="AddAndSubtract"></p>
 </div>
 <!-- 使用说明begin -->
+
+<div class="con-list-item">
+    <div class="con-head">使用说明</div>
+  
+    <div class="instructions">
+        <div class="instructions-con">
+            
+            <div class="instructions-con-info">
+            <h4 id="demo">Demo</h4>
+<p><img src="http://wx3.sinaimg.cn/mw690/4c8b519dly1fcaq7v2pnvg20ho0wgh0z.gif" alt="AddAndSubtract"></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-JavaScript"><span class="token keyword">import</span> Template <span class="token keyword">from</span> <span class="token string">'rnx-ui/Template'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">Example</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>AddAndSubtract
+      num<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>num<span class="token punctuation">}</span>
+      onPressAdder<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>add<span class="token punctuation">}</span>
+      onPressSubtracter<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>subtract<span class="token punctuation">}</span>
+    <span class="token operator">/</span><span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+            </div>
+            
+            
+        </div>
+    </div>
+ 
+</div>
 
 <!-- 使用说明end -->
 <div class="con-list-item">
@@ -833,18 +863,6 @@ bottom: 5,
 
 
 
-
-<div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import Template from 'rnx-ui/Template';
-function Example(props) {
-  return (
-     &lt;AddAndSubtract
-       num={this.state.num}
-       onPressAdder={this.add}
-       onPressSubtracter={this.subtract}
-     /&gt;
-   );
- }</code></pre>
 
 
 </div>

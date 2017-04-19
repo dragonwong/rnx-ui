@@ -1,7 +1,8 @@
 /**
  * @component Validator
  * @version 0.17.0
- * @description 提示框
+ * @description 表单校验工具
+ * @instructions {instruInfo: ./Validator.md}
  */
 
 class Validator {

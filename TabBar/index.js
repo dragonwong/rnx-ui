@@ -1,9 +1,9 @@
 /**
- * @component TagBar
+ * @component TabBar
  * @version 0.17.0
  * @description 横向点击栏
  *
- * ![TabBar](https://github.com/wangkexinW/rnx-ui/blob/doc/TabBar/TabBar.png?raw=true)
+ * @instructions {instruInfo: ./TabBar.md}
  */
 import React, {
   PropTypes,

@@ -7,16 +7,7 @@
  *
  * 配套组件：[RefreshControl](./RefreshControl/README.md)
  *
- * ![RefreshView](https://github.com/wangkexinW/rnx-ui/blob/doc/RefreshView/RefreshView.gif?raw=true)
- * @example
- * import PlaceholderText from 'rnx-ui/PlaceholderText';
- * function Example(props) {
- *   return (
- *     <PlaceholderText
- *       placeholder={this.placeholder}
- *     />
- *   );
- * }
+ * @instructions {instruInfo: ./RefreshView.md}
  */
 import React, {
   Component,

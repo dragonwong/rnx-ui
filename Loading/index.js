@@ -1,10 +1,9 @@
-
 /**
  * @component Loading
  * @version 0.17.0
  * @description 菊花加载中组件
  *
- * ![Loading](https://github.com/wangkexinW/rnx-ui/blob/doc/Loading/Loading.png?raw=true)
+ * @instructions {instruInfo: ./Loading.md}
  */
 import React, {
   PropTypes,

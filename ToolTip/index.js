@@ -3,10 +3,7 @@
  * @version 0.16.0
  * @description 提示框
  *
- * ![AddAndSubtract](http://wx2.sinaimg.cn/mw690/4c8b519dly1fdlfmi544kg20hs0wswjd.gif)
- *
- *  ## Other Points
- * 内部封装了 Overlay 组件，请参考 [Overlay](https://github.com/dragonwong/rnx-ui/tree/master/Overlay)
+ * @instructions {instruInfo: ./ToolTip.md}
  */
 import React, {
   Component,

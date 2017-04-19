@@ -2,13 +2,8 @@
  * @component ActionSheet
  * @version 0.11.7
  * @description 上拉按钮组
- * @example
- * import ActionSheet from 'rnx-ui/ActionSheet';
- * function Example(props) {
- *   return (
- *     <ActionSheet />
- *   );
- * }
+ *
+ * @instructions {instruInfo: ./ActionSheet.md}
  */
 import React, { Component, PropTypes } from 'react';
 import {

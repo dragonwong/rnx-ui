@@ -3,7 +3,7 @@
  * @version 0.12.0
  * @description 有标题栏的底部弹层
  *
- * ![navBar demo](https://github.com/wangkexinW/rnx-ui/blob/doc/HeaderedSheet/HeaderedSheet.gif?raw=true)
+ * @instructions {instruInfo: ./HeaderedSheet.md}
  */
 import React, { Component, PropTypes } from 'react';
 import {

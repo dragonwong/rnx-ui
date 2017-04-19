@@ -3,7 +3,7 @@
  * @version 0.11.6
  * @description 导航栏
  *
- * ![NavBar](https://github.com/wangkexinW/rnx-ui/blob/doc/NavBar/NavBar.png?raw=true)
+ * @instructions {instruInfo: ./NavBar.md}
  */
 import React, { Component, PropTypes } from 'react';
 import {

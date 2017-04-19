@@ -7,28 +7,7 @@
  *  1. 提供元素中心坐标，以作为掉落动画的终点；
  *  2. 提供掉落组件到达时的响应动画，需要在 `Dropper` 元素的 `onEnd` 回调中手动调用 `Receiver` 元素的 `animate` 方法。
  *
- * @example
- * import {Receiver,} from 'rnx-ui/Drop';
- * import Badge from 'rnx-ui/Drop';
- * function CartReceiver(props) {
- *   return (
- *     <Receiver
- *       ref={props.getEl}
- *       getCenterPosition={props.getCenterPosition}
- *       style={styles.all}
- *     >
- *       <Badge
- *         text={props.count}
- *         textContainerStyle={styles.textContainer}
- *       >
- *         <Cart
- *           style={styles.cart}
- *           iconStyle={styles.icon}
- *         />
- *       </Badge>
- *   </Receiver>
- * );
- * }
+ * @instructions {instruInfo: ./Receiver.md}
  */
 import React, {
   PropTypes,

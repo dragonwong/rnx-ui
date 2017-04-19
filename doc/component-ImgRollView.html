@@ -439,13 +439,41 @@
     <span class="yo-badge yo-badge-danger">0.13.0</span>
 </h2>
 <div class="api-content"><p>图片多选组件</p>
-<p>⚠️ 注意</p>
-<p>CameraRoll 提供了访问本地相册的功能。</p>
-<p>在iOS上使用这个模块之前，你需要先链接 RCTCameraRoll 库，具体做法请参考<a href="https://reactnative.cn/docs/0.42/linking-libraries-ios.html">链接原生库文档</a>。另外，从 iOS10 开始，访问相册需要用户授权。
-你需要在 <code>Info.plist</code> 中添加一条名为 <code>NSCameraUsageDescription</code> 的键，然后在其值中填写向用户请求权限的具体描述。
-编辑完成后这个键在 Xcode 中实际会显示为 <code>Privacy - Camera Usage Description</code>。</p>
 </div>
 <!-- 使用说明begin -->
+
+<div class="con-list-item">
+    <div class="con-head">使用说明</div>
+  
+    <div class="instructions">
+        <div class="instructions-con">
+            
+            <div class="instructions-con-info">
+            <h4 id="example">Example</h4>
+<pre><code class="lang-JavaScript"><span class="token keyword">import</span> ImgRollView <span class="token keyword">from</span> <span class="token string">'rnx-ui/ImgPicker'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">Example</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>ImgRollView
+      onSelect<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>onSelect<span class="token punctuation">}</span>
+      style<span class="token operator">=</span><span class="token punctuation">{</span>style<span class="token punctuation">.</span>imgRollViewStyle<span class="token punctuation">}</span>
+      maxSelected<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">5</span><span class="token punctuation">}</span>
+      iconSelected<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">&lt;</span>Icon name<span class="token operator">=</span><span class="token string">"fa-check"</span> style<span class="token operator">=</span><span class="token punctuation">{</span>style<span class="token punctuation">.</span>iconStyle<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">}</span>
+      iconUnSelected<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">&lt;</span>Icon name<span class="token operator">=</span><span class="token string">"fa-check"</span> style<span class="token operator">=</span><span class="token punctuation">{</span>style<span class="token punctuation">.</span>iconStyle<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">}</span>
+    <span class="token operator">/</span><span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="-">⚠️ 注意</h3>
+<p>CameraRoll 提供了访问本地相册的功能。在iOS上使用这个模块之前，你需要先链接 RCTCameraRoll 库，具体做法请参考<a href="https://reactnative.cn/docs/0.42/linking-libraries-ios.html">链接原生库文档</a>。另外，从 iOS10 开始，访问相册需要用户授权。你需要在 <code>Info.plist</code> 中添加一条名为 <code>NSCameraUsageDescription</code> 的键，然后在其值中填写向用户请求权限的具体描述。编辑完成后这个键在 Xcode 中实际会显示为 <code>Privacy - Camera Usage Description</code>。</p>
+
+            </div>
+            
+            
+        </div>
+    </div>
+ 
+</div>
 
 <!-- 使用说明end -->
 <div class="con-list-item">
@@ -742,20 +770,6 @@
 
 
 
-
-<div class="con-head">示例</div>
-<pre class="ydoc-example" ><code>import ImgRollView from 'rnx-ui/ImgPicker';
-function Example(props) {
- return (
-    &lt;ImgRollView
-      onSelect={this.onSelect}
-      style={style.imgRollViewStyle}
-      maxSelected={5}
-   iconSelected={&lt;Icon name="fa-check" style={style.iconStyle} /&gt;}
-   iconUnSelected={&lt;Icon name="fa-check" style={style.iconStyle} /&gt;}
-     /&gt;
-   );
-   }</code></pre>
 
 
 </div>

@@ -3,28 +3,7 @@
  * @version 0.11.7
  * @description 图片选择组件
  *
- * ![ImgPicker](https://github.com/wangkexinW/rnx-ui/blob/doc/ImgPicker/ImgPicker.png?raw=true)
- * @example
- * import ImgPicker from 'rnx-ui/ImgPicker';
- * function Example(props) {
- *  return (
- *   <ImgPicker
- *     images={this.state.images}
- *     adder={
- *       <Icon name="add" style={styles.imgPickerAdder} />
- *     }
- *     adderVisible={this.state.images.length < MAX_PHOTOS_NUMBER}
- *     imgDisplayerProps={{
- *       onImgPress: this.showPhoto,
- *       deleter: (
- *         <Icon name="close" style={styles.imgPickerDeleterIcon} />
- *       ),
- *       onDeleterPress: this.removePhoto,
- *     }}
- *     onAdderPress={this.openCameraActionSheet}
- *   />
- *  );
- * }
+ * @instructions {instruInfo: ./ImgPicker.md}
  */
 import React, {
   Component,
