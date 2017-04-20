@@ -4,7 +4,7 @@
  * @description 掉落组件
  * 用来包裹掉落元素，提供抛物线运动的动画。
  *
- * @instructions {instruInfo: ./Dropper.md}
+ * @instructions {instruInfo: ./Drop/Dropper/Dropper.md}
  */
 import React, {
   Component,

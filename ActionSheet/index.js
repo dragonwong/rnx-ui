@@ -3,7 +3,7 @@
  * @version 0.11.7
  * @description 上拉按钮组
  *
- * @instructions {instruInfo: ./ActionSheet.md}
+ * @instructions {instruInfo: ./ActionSheet/ActionSheet.md}
  */
 import React, { Component, PropTypes } from 'react';
 import {

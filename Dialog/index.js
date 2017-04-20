@@ -3,7 +3,7 @@
  * @version 0.17.1
  * @description 警告弹框
  *
- * @instructions {instruInfo: ./Dialog.md}
+ * @instructions {instruInfo: ./Dialog/Dialog.md}
  */
 import React, {
   Component,

@@ -3,7 +3,7 @@
  * @version 0.11.7
  * @description 图片选择组件
  *
- * @instructions {instruInfo: ./ImgPicker.md}
+ * @instructions {instruInfo: ./ImgPicker/ImgPicker.md}
  */
 import React, {
   Component,

@@ -3,7 +3,7 @@
  * @version 0.13.1
  * @description 手机号码输入框组件
  *
- * @instructions {instruInfo: ./PhoneNumInput.md}
+ * @instructions {instruInfo: ./PhoneNumInput/PhoneNumInput.md}
  */
 import React, { Component, PropTypes } from 'react';
 import {

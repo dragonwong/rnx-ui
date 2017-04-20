@@ -3,7 +3,7 @@
  * @version 0.11.4
  * @description 角标组件 通常用来显示未读消息数目。
  *
- * @instructions {instruInfo: ./Badge.md}
+ * @instructions {instruInfo: ./Badge/Badge.md}
  */
 import React, {
   PropTypes,

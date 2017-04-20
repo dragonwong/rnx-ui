@@ -7,7 +7,7 @@
  *
  * 配套组件：[RefreshControl](./RefreshControl/README.md)
  *
- * @instructions {instruInfo: ./RefreshView.md}
+ * @instructions {instruInfo: ./RefreshView/RefreshView.md}
  */
 import React, {
   Component,

@@ -3,7 +3,7 @@
  * @version 0.13.0
  * @description 图片多选组件
  *
- * @instructions {instruInfo: ./ImgRollView.md}
+ * @instructions {instruInfo: ./ImgRollView/ImgRollView.md}
  */
 import React, { Component, PropTypes } from 'react';
 import {

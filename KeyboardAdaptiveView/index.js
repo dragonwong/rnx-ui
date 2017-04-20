@@ -3,7 +3,7 @@
  * @version 0.13.0
  * @description
  *  适应键盘的容器
- * @instructions {instruInfo: ./KeyboardAdaptiveView.md}
+ * @instructions {instruInfo: ./KeyboardAdaptiveView/KeyboardAdaptiveView.md}
  */
 import React, {
   PropTypes,

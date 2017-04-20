@@ -3,7 +3,7 @@
  * @version 0.17.0
  * @description 带占位的图片组件
  *
- * @instructions {instruInfo: ./ImgHolder.md}
+ * @instructions {instruInfo: ./ImgHolder/ImgHolder.md}
  */
 import React, {
   PropTypes,

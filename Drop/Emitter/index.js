@@ -3,7 +3,7 @@
  * @version 0.17.0
  * @description 掉落事件点击发射组件
  * 用来包裹掉落事件点击发射元素，提供元素中心坐标，以作为掉落动画的起点。
- * @instructions {instruInfo: ./Emitter.md}
+ * @instructions {instruInfo: ./Drop/Emitter/Emitter.md}
  */
 import React, {
   Component,

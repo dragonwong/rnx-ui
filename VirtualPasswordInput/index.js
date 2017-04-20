@@ -3,7 +3,7 @@
  * @version 0.17.0
  * @description 虚拟密码输入框
  *
- * @instructions {instruInfo: ./VirtualPasswordInput.md}
+ * @instructions {instruInfo: ./VirtualPasswordInput/VirtualPasswordInput.md}
  */
 
 import React, { Component, PropTypes } from 'react';

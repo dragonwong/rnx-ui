@@ -5,7 +5,7 @@
  * @description 遮罩层
  * 具有渐隐渐显动画效果的遮罩层组件。
  *
- * @instructions {instruInfo: ./Overlay.md}
+ * @instructions {instruInfo: ./Overlay/Overlay.md}
  */
 import React, {
   PropTypes,

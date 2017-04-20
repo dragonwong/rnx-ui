@@ -2,7 +2,7 @@
  * @component PlaceholderText
  * @version 0.11.9
  * @description 有占位元素的文本显示组件
- * @instructions {instruInfo: ./PlaceholderText.md}
+ * @instructions {instruInfo: ./PlaceholderText/PlaceholderText.md}
  */
 import React, {
   PropTypes,
