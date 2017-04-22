@@ -3,7 +3,7 @@
  * @version 0.17.0
  * @description 自动滚动的文本框：文字超长时滚动显示
  *
- * @instructions {instruInfo: ./DynamicText.md}
+ * @instructions {instruInfo: ./DynamicText/DynamicText.md}
  */
 import React, {
   Component,

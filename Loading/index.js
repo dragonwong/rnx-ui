@@ -3,7 +3,7 @@
  * @version 0.17.1
  * @description 菊花加载中组件
  *
- * @instructions {instruInfo: ./Loading.md}
+ * @instructions {instruInfo: ./Loading/Loading.md}
  */
 import React, {
   PropTypes,

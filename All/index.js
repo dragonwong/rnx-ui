@@ -2,7 +2,7 @@
  * @component All
  * @description 页面级容器，内置了 `StatusBar`。
  *
- * @instructions {instruInfo: ./All.md}
+ * @instructions {instruInfo: ./All/All.md}
  */
 import React, {
   PropTypes,

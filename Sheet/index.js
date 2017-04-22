@@ -4,7 +4,7 @@
  * @description 底部弹层
  *  底部弹层弹出会有动画。
  *
- * @instructions {instruInfo: ./Sheet.md}
+ * @instructions {instruInfo: ./Sheet/Sheet.md}
  */
 import React, {
   Component,

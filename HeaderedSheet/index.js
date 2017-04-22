@@ -3,7 +3,7 @@
  * @version 0.12.0
  * @description 有标题栏的底部弹层
  *
- * @instructions {instruInfo: ./HeaderedSheet.md}
+ * @instructions {instruInfo: ./HeaderedSheet/HeaderedSheet.md}
  */
 import React, { Component, PropTypes } from 'react';
 import {

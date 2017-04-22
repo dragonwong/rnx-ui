@@ -3,7 +3,7 @@
  * @version 0.17.0
  * @description 确认弹框组件
  *
- * @instructions {instruInfo: ./Confirm.md}
+ * @instructions {instruInfo: ./Confirm/Confirm.md}
  */
 import React, {
   PropTypes,

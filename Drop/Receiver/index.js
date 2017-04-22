@@ -7,7 +7,7 @@
  *  1. 提供元素中心坐标，以作为掉落动画的终点；
  *  2. 提供掉落组件到达时的响应动画，需要在 `Dropper` 元素的 `onEnd` 回调中手动调用 `Receiver` 元素的 `animate` 方法。
  *
- * @instructions {instruInfo: ./Receiver.md}
+ * @instructions {instruInfo: ./Drop/Receiver/Receiver.md}
  */
 import React, {
   PropTypes,

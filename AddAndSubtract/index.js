@@ -3,7 +3,7 @@
  * @version 0.17.0
  * @description 加减法动画组件
  *
- * @instructions {instruInfo: ./AddAndSubtract.md}
+ * @instructions {instruInfo: ./AddAndSubtract/AddAndSubtract.md}
  */
 import React, {
   PropTypes,

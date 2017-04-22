@@ -4,7 +4,7 @@
  * @description 卡片视图
  * 以卡片样式浏览，并可以设置激活卡片样式。
  *
- * @instructions {instruInfo: ./CardView.md}
+ * @instructions {instruInfo: ./CardView/CardView.md}
  *
  */
 import React, {

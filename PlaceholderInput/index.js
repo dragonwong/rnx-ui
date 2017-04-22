@@ -3,7 +3,7 @@
  * @version 0.11.9
  * @description 可以自定义占位元素的输入框
  * React Native 提供的 `TextInput` 组件的 `placeholder` 可定制程度太低了，`PlaceholderInput` 应运而生。
- * @instructions {instruInfo: ./PlaceholderInput.md}
+ * @instructions {instruInfo: ./PlaceholderInput/PlaceholderInput.md}
  */
 import React, {
   PropTypes,

@@ -3,7 +3,7 @@
  * @version 0.17.0
  * @description 横向点击栏
  *
- * @instructions {instruInfo: ./TabBar.md}
+ * @instructions {instruInfo: ./TabBar/TabBar.md}
  */
 import React, {
   PropTypes,

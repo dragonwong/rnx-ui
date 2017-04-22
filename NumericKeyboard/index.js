@@ -2,7 +2,7 @@
  * @component NumericKeyboardar
  * @version 0.17.0
  * @description 虚拟数字键盘
- * @instructions {instruInfo: ./NumericKeyboardar.md}
+ * @instructions {instruInfo: ./NumericKeyboard/NumericKeyboardar.md}
  */
 import React, {
   Component,

@@ -3,7 +3,7 @@
  * @version 0.17.0
  * @description 像素（px）转虚拟像素（dp）方法
  *
- * @instructions {instruInfo: ./TransPxToDp.md}
+ * @instructions {instruInfo: ./util/transPxToDp/TransPxToDp.md}
  */
 import { PixelRatio } from 'react-native';
 

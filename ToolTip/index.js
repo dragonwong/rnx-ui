@@ -3,7 +3,7 @@
  * @version 0.16.0
  * @description 提示框
  *
- * @instructions {instruInfo: ./ToolTip.md}
+ * @instructions {instruInfo: ./ToolTip/ToolTip.md}
  */
 import React, {
   Component,

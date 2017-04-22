@@ -4,7 +4,7 @@
  * @description 警告弹框组件
  *
  *
- * @instructions {instruInfo: ./Alert.md}
+ * @instructions {instruInfo: ./Alert/Alert.md}
  */
 import React, {
   PropTypes,

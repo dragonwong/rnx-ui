@@ -3,7 +3,7 @@
  * @version 0.11.6
  * @description 导航栏
  *
- * @instructions {instruInfo: ./NavBar.md}
+ * @instructions {instruInfo: ./NavBar/NavBar.md}
  */
 import React, { Component, PropTypes } from 'react';
 import {

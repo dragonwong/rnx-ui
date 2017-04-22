@@ -3,7 +3,7 @@
  * @version 0.17.0
  * @description 按钮
  *
- * @instructions {instruInfo: ./Btn.md}
+ * @instructions {instruInfo: ./Btn/Btn.md}
  */
 import React, {
   Component,
